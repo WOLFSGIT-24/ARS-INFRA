@@ -65,7 +65,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
           >
             <img
               src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-              alt="ARS Svasa Logo"
+              alt="ARS Svaasa Logo"
               className="h-12 sm:h-16 md:h-20 w-auto object-contain filter brightness-0 invert drop-shadow-md group-hover:opacity-90 transition-opacity"
               width="160"
               height="64"
@@ -86,11 +86,11 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
             ))}
           </nav>
 
-          {/* Right Action Button: Sleek Dark Pill button matching the reference */}
+          {/* Right Action Button */}
           <div className="flex items-center gap-2 sm:gap-3">
             <button
               onClick={onOpenBooking}
-              className="hidden sm:inline-flex bg-[#090F1D]/90 hover:bg-black text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-white/20 hover:border-white/40 transition-all shadow-md cursor-pointer tracking-wide"
+              className="hidden sm:inline-flex bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-white/20 transition-all shadow-md cursor-pointer tracking-wide"
             >
               Get started
             </button>
@@ -98,7 +98,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer bg-[#090F1D]/60 backdrop-blur-md"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer bg-[#0B4D8C]/80 backdrop-blur-md"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? (
@@ -121,7 +121,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
           <div className="pb-3 border-b border-white/10 flex items-center justify-between">
             <img
               src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-              alt="ARS Svasa Logo"
+              alt="ARS Svaasa Logo"
               className="h-8 w-auto object-contain filter brightness-0 invert"
             />
             <span className="text-[11px] uppercase tracking-widest text-[#C5A880] font-semibold">
@@ -145,7 +145,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="w-full bg-[#090F1D] text-white font-body text-sm font-semibold py-3.5 rounded-full border border-white/30 shadow-lg"
+              className="w-full bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-sm font-semibold py-3.5 rounded-full shadow-lg"
             >
               Book a Site Visit
             </button>

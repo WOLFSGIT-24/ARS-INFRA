@@ -26,12 +26,12 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           {/* Right Description & Action */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
-              The ARS Svasa masterplan offers a spacious and efficient layout, featuring well ventilated 1839 and 2083 sq. ft. units. Wide corridors, a dedicated fire lobby, and 3 high-speed lifts ensure easy access and safety, creating a perfect blend of luxury and practicality.
+              The ARS Svaasa masterplan offers a spacious and efficient layout, featuring well ventilated 1839 and 2083 sq. ft. units. Wide corridors, a dedicated fire lobby, and 3 high-speed lifts ensure easy access and safety, creating a perfect blend of luxury and practicality.
             </p>
             <div>
               <button
                 onClick={() => setModalOpen(true)}
-                className="bg-black hover:bg-neutral-800 text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center gap-2"
+                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center gap-2"
               >
                 <ZoomIn className="h-4 w-4" />
                 <span>Enlarge Master Plan</span>
@@ -51,7 +51,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           >
             <img
               src="/assets/silver_horizon/master_plan_layout.webp"
-              alt="ARS Svasa Master Plan & Parking Layout"
+              alt="ARS Svaasa Master Plan & Parking Layout"
               loading="lazy"
               className="w-full h-full object-contain p-2 sm:p-6 transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
@@ -65,23 +65,23 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             </div>
           </div>
 
-          {/* Key Project Specifications Footnote Stats Bar */}
+          {/* Key Project Specifications Footnote Stats Bar matching Brochure style */}
           <div className="mt-6 pt-5 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-            <div className="bg-[#FAF8F5] p-3 rounded-xl border border-gray-100">
-              <span className="text-xs text-gray-500 uppercase tracking-wider block">No. of Flats</span>
-              <span className="text-base sm:text-lg font-bold text-[#161A22]">88 Flats</span>
+            <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
+              <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">No. of Flats</span>
+              <span className="text-base sm:text-lg font-bold">88 Flats</span>
             </div>
-            <div className="bg-[#FAF8F5] p-3 rounded-xl border border-gray-100">
-              <span className="text-xs text-gray-500 uppercase tracking-wider block">No. of Floors</span>
-              <span className="text-base sm:text-lg font-bold text-[#161A22]">G+22 Floors</span>
+            <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
+              <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">No. of Floors</span>
+              <span className="text-base sm:text-lg font-bold">G+22 Floors</span>
             </div>
-            <div className="bg-[#FAF8F5] p-3 rounded-xl border border-gray-100">
-              <span className="text-xs text-gray-500 uppercase tracking-wider block">Parking</span>
-              <span className="text-base sm:text-lg font-bold text-[#161A22]">Basement</span>
+            <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
+              <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">Parking</span>
+              <span className="text-base sm:text-lg font-bold">Basement</span>
             </div>
-            <div className="bg-[#FAF8F5] p-3 rounded-xl border border-gray-100">
-              <span className="text-xs text-gray-500 uppercase tracking-wider block">Lifts</span>
-              <span className="text-base sm:text-lg font-bold text-[#161A22]">3 (Schindler 8 Pax)</span>
+            <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
+              <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">Lifts</span>
+              <span className="text-base sm:text-lg font-bold">3 (Schindler 8 Pax)</span>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <div className="flex justify-between items-center pb-4 border-b border-gray-100">
               <div>
                 <h3 className="text-xl sm:text-2xl font-normal text-[#161A22] tracking-tight">
-                  ARS Svasa: Site Master Plan & Parking Plan
+                  ARS Svaasa: Site Master Plan & Parking Plan
                 </h3>
                 <p className="text-xs text-gray-500">
                   G+22 Floors • 88 Flats • 1839 & 2083 Sq.Ft Units • Basement Parking
@@ -120,7 +120,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <div className="overflow-auto flex-1 my-4 flex items-center justify-center bg-[#FAF8F5] p-2 sm:p-6 rounded-xl border border-gray-100">
               <img
                 src="/assets/silver_horizon/master_plan_layout.webp"
-                alt="ARS Svasa Full Master Plan"
+                alt="ARS Svaasa Full Master Plan"
                 className="max-w-full max-h-[70vh] object-contain"
               />
             </div>
@@ -131,7 +131,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
               </span>
               <button
                 onClick={() => setModalOpen(false)}
-                className="px-6 py-2.5 bg-black hover:bg-neutral-800 text-white rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer"
+                className="px-6 py-2.5 bg-[#0B4D8C] hover:bg-[#003B70] text-white rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer"
               >
                 Close
               </button>

@@ -32,7 +32,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
           <div>
             <h2 className="font-display text-2xl sm:text-3xl text-[#0E172A] font-bold">Privacy Policy</h2>
             <p className="font-body text-xs text-[#A88758] mt-1 uppercase tracking-widest font-semibold">
-              ARS Svasa by ARS Infraa
+              ARS Svaasa by ARS Infraa
             </p>
           </div>
           <button
@@ -47,7 +47,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
         {/* Content */}
         <div className="p-6 sm:p-8 overflow-y-auto font-body text-sm text-[#4A5260] leading-relaxed space-y-6">
           <p>
-            This website is operated as an official informational and enquiry portal for <strong>ARS Svasa</strong>, developed by <strong>ARS Infraa</strong>. We are committed to protecting the privacy of our prospective homebuyers and handling personal data with absolute integrity.
+            This website is operated as an official informational and enquiry portal for <strong>ARS Svaasa</strong>, developed by <strong>ARS Infraa</strong>. We are committed to protecting the privacy of our prospective homebuyers and handling personal data with absolute integrity.
           </p>
 
           <div className="space-y-2">
@@ -57,7 +57,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
 
           <div className="space-y-2">
             <h3 className="font-display text-lg font-bold text-[#0E172A]">2. Use of Information</h3>
-            <p>Your details are utilized solely for scheduling site walkthroughs, sharing official project documents, providing price quotations, and answering customer queries regarding ARS Svasa.</p>
+            <p>Your details are utilized solely for scheduling site walkthroughs, sharing official project documents, providing price quotations, and answering customer queries regarding ARS Svaasa.</p>
           </div>
 
           <div className="space-y-2">
@@ -68,7 +68,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
           <div className="space-y-2">
             <h3 className="font-display text-lg font-bold text-[#0E172A]">4. Official Developer Contact</h3>
             <ul className="list-none space-y-1.5 text-xs text-[#161A22] bg-[#FAF8F5] p-4 rounded-xl border border-[#E5DED3]">
-              <li><strong>Project:</strong> ARS Svasa (3 BHK Luxury Residences)</li>
+              <li><strong>Project:</strong> ARS Svaasa (3 BHK Luxury Residences)</li>
               <li><strong>Developer:</strong> {projectSnapshot.developerFull}</li>
               <li><strong>Address:</strong> {projectSnapshot.address}</li>
               <li><strong>Phone:</strong> {projectSnapshot.phonePrimary} | {projectSnapshot.phoneSecondary}</li>

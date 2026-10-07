@@ -126,7 +126,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
                 ARS Infraa
               </span>
               <h3 className="font-display text-lg sm:text-xl font-bold text-white mt-0.5">
-                Experience ARS Svasa
+                Experience ARS Svaasa
               </h3>
               <p className="font-body text-xs text-white/70 mt-1 leading-relaxed">
                 Connect directly with our relationship manager for floor plans, custom pricing, and private site walkthroughs.
@@ -212,7 +212,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-to-r from-[#0E172A] to-[#1E2D4A] hover:from-[#1E2D4A] hover:to-[#0E172A] text-[#EFE4D2] font-body text-xs font-bold tracking-[0.2em] uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-3"
+                className="w-full bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold tracking-[0.2em] uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-3 transition-all"
               >
                 {loading ? (
                   <span className="h-4 w-4 border-2 border-white border-t-transparent rounded-full animate-spin" />

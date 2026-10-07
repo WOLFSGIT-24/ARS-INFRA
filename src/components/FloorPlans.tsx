@@ -122,7 +122,7 @@ export default function FloorPlans({
                   if (onOpenBooking) onOpenBooking();
                   else onUnlockRequest();
                 }}
-                className="bg-black hover:bg-neutral-800 text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
+                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
               >
                 View all floor plans
               </button>
@@ -188,14 +188,14 @@ export default function FloorPlans({
         <div className="flex justify-center items-center gap-3 pt-8 sm:pt-10">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 rounded-full bg-black hover:bg-neutral-800 text-white flex items-center justify-center transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer"
+            className="w-12 h-12 rounded-full bg-[#0B4D8C] hover:bg-[#003B70] text-white flex items-center justify-center transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer"
             aria-label="Previous residences"
           >
             <ArrowLeft className="h-5 w-5" />
           </button>
           <button
             onClick={nextSlide}
-            className="w-12 h-12 rounded-full bg-black hover:bg-neutral-800 text-white flex items-center justify-center transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer"
+            className="w-12 h-12 rounded-full bg-[#0B4D8C] hover:bg-[#003B70] text-white flex items-center justify-center transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer"
             aria-label="Next residences"
           >
             <ArrowRight className="h-5 w-5" />
@@ -247,7 +247,7 @@ export default function FloorPlans({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-700">
                 {selectedPlan.highlights.map((h, i) => (
                   <div key={i} className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-black shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0B4D8C] shrink-0" />
                     <span>{h}</span>
                   </div>
                 ))}
@@ -263,7 +263,7 @@ export default function FloorPlans({
                   onSelectUnit(selectedPlan.type);
                   setSelectedPlan(null);
                 }}
-                className="bg-black hover:bg-neutral-800 text-white font-body text-xs font-semibold tracking-wide px-8 py-3 rounded-full transition-all shadow-md cursor-pointer"
+                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-semibold tracking-wide px-8 py-3 rounded-full transition-all shadow-md cursor-pointer"
               >
                 Request Unit Pricing
               </button>

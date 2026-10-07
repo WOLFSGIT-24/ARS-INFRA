@@ -10,23 +10,23 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
   const autoScrollImages = [
     {
       src: "/assets/silver_horizon/building_slide_01.webp",
-      alt: "ARS Svasa Architectural View 1",
+      alt: "ARS Svaasa Architectural View 1",
     },
     {
       src: "/assets/silver_horizon/building_slide_02.webp",
-      alt: "ARS Svasa Facade View 2",
+      alt: "ARS Svaasa Facade View 2",
     },
     {
       src: "/assets/silver_horizon/building_slide_03.webp",
-      alt: "ARS Svasa Elevated Landmark View 3",
+      alt: "ARS Svaasa Elevated Landmark View 3",
     },
     {
       src: "/assets/silver_horizon/building_slide_04.webp",
-      alt: "ARS Svasa Residential Skyline View 4",
+      alt: "ARS Svaasa Residential Skyline View 4",
     },
     {
       src: "/assets/silver_horizon/building_slide_05.webp",
-      alt: "ARS Svasa Tower Perspective View 5",
+      alt: "ARS Svaasa Tower Perspective View 5",
     },
   ];
 
@@ -43,19 +43,19 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
               Elegant Heights
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-[#161A22] leading-[1.15] capitalize">
-              The Architectural Beauty of ARS Svasa
+              The Architectural Beauty of ARS Svaasa
             </h2>
           </div>
 
           {/* Right Description & CTA */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
-              The elevation of ARS Svasa combines modern elegance with impressive height, featuring sleek lines and uniform balconies that draw the eye upward. Its warm-toned facade blends harmoniously with the surroundings, creating a refined, luxurious presence that redefines urban living.
+              The elevation of ARS Svaasa combines modern elegance with impressive height, featuring sleek lines and uniform balconies that draw the eye upward. Its warm-toned facade blends harmoniously with the surroundings, creating a refined, luxurious presence that redefines urban living.
             </p>
             <div>
               <button
                 onClick={onOpenEnquiry}
-                className="bg-black hover:bg-neutral-800 text-white font-body text-xs sm:text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
+                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
               >
                 Explore
               </button>

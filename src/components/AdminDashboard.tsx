@@ -58,7 +58,7 @@ export default function AdminDashboard({
                 ARS Infraa — Sales Console
               </h3>
               <p className="text-[10px] text-[#EFE4D2] uppercase tracking-widest font-bold">
-                ARS Svasa Lead Pipeline & Walkthrough Appointments
+                ARS Svaasa Lead Pipeline & Walkthrough Appointments
               </p>
             </div>
           </div>

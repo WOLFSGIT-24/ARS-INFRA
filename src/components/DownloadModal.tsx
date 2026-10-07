@@ -79,7 +79,7 @@ export default function DownloadModal({
         email: formData.email,
         phone: formData.phone,
         source: "brochure_download_modal",
-        notes: "Requested ARS Svasa brochure download.",
+        notes: "Requested ARS Svaasa brochure download.",
       });
       setLoading(false);
       setSubmitted(true);
@@ -109,7 +109,7 @@ export default function DownloadModal({
                 Download Official Brochure
               </h3>
               <p className="text-[10px] text-[#EFE4D2] uppercase tracking-widest font-bold">
-                ARS Svasa by ARS Infraa
+                ARS Svaasa by ARS Infraa
               </p>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function DownloadModal({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 bg-[#0E172A] hover:bg-[#1E2D4A] text-[#EFE4D2] font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-70 transition-all cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-70 transition-all cursor-pointer"
                 >
                   {loading ? (
                     <span className="flex items-center gap-2">
@@ -227,7 +227,7 @@ export default function DownloadModal({
                   Download Initiated
                 </h3>
                 <p className="font-body text-xs text-[#4A5260] mt-2 max-w-xs mx-auto">
-                  Your official ARS Svasa brochure PDF is downloading.
+                  Your official ARS Svaasa brochure PDF is downloading.
                 </p>
               </div>
             </div>

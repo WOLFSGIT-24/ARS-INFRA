@@ -9,7 +9,7 @@ import {
 } from "./types";
 
 export const projectSnapshot = {
-  name: "ARS Svasa",
+  name: "ARS Svaasa",
   tagline: "Luxury Living, Elevated",
   developer: "ARS Infraa",
   developerFull: "ARS Infraa Pvt. Ltd.",
@@ -37,7 +37,7 @@ export const projectSnapshot = {
 };
 
 export const keyHighlights = [
-  { value: "G+22", label: "Storey Landmark", sub: "Architectural Beauty of ARS Svasa" },
+  { value: "G+22", label: "Storey Landmark", sub: "Architectural Beauty of ARS Svaasa" },
   { value: "88", label: "Flats", sub: "Exclusive High-Rise Community" },
   { value: "1839 & 2083", label: "SQFT Units", sub: "Spacious 3 BHK Floor Plans" },
   { value: "3", label: "Schindler Lifts", sub: "8 Passenger Capacity Each" },
@@ -377,7 +377,7 @@ export const consultantsData: ConsultantItem[] = [
 
 export const trackRecordData: TrackRecordProject[] = [
   {
-    title: "ARS SVASA",
+    title: "ARS SVAASA",
     type: "3 BHK Luxury Residences",
     location: "Sarjapura Road, Yamare, Bengaluru",
     imageUrl: "/assets/silver_horizon/tower_day_view.webp",

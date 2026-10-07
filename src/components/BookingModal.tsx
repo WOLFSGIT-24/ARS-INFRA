@@ -96,7 +96,7 @@ export default function BookingModal({
             </div>
             <div>
               <h3 className="font-display text-base sm:text-lg font-bold tracking-tight">
-                Unlock ARS Svasa Layouts
+                Unlock ARS Svaasa Layouts
               </h3>
               <p className="text-[10px] text-[#EFE4D2] uppercase tracking-widest font-bold">
                 Enter your details to view full blueprints
@@ -184,7 +184,7 @@ export default function BookingModal({
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2 bg-[#0E172A] hover:bg-[#1E2D4A] text-[#EFE4D2] font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-50 cursor-pointer transition-all mt-3"
+                className="w-full flex items-center justify-center gap-2 bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-50 cursor-pointer transition-all mt-3"
               >
                 {loading ? (
                   <>
@@ -207,7 +207,7 @@ export default function BookingModal({
                   Floor Plans Unlocked
                 </h4>
                 <p className="font-body text-xs text-[#4A5260] mt-1.5 max-w-sm mx-auto">
-                  Thank you, <strong>{formData.fullName}</strong>. You now have full access to explore the ARS Svasa floor plans.
+                  Thank you, <strong>{formData.fullName}</strong>. You now have full access to explore the ARS Svaasa floor plans.
                 </p>
               </div>
 

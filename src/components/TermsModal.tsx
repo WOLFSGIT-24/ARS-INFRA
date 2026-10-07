@@ -32,7 +32,7 @@ export default function TermsModal({ isOpen, onClose }: TermsModalProps) {
           <div>
             <h2 className="font-display text-2xl sm:text-3xl text-[#0E172A] font-bold">Terms & Conditions</h2>
             <p className="font-body text-xs text-[#A88758] mt-1 uppercase tracking-widest font-semibold">
-              ARS Svasa by ARS Infraa
+              ARS Svaasa by ARS Infraa
             </p>
           </div>
           <button
@@ -47,13 +47,13 @@ export default function TermsModal({ isOpen, onClose }: TermsModalProps) {
         {/* Content */}
         <div className="p-6 sm:p-8 overflow-y-auto font-body text-sm text-[#4A5260] leading-relaxed space-y-6">
           <p>
-            Welcome to the official digital portal for <strong>ARS Svasa</strong>, developed by <strong>ARS Infraa</strong>. By accessing this portal, you agree to comply with the terms and statutory guidelines outlined herein.
+            Welcome to the official digital portal for <strong>ARS Svaasa</strong>, developed by <strong>ARS Infraa</strong>. By accessing this portal, you agree to comply with the terms and statutory guidelines outlined herein.
           </p>
 
           <div className="space-y-2">
             <h3 className="font-display text-lg font-bold text-[#0E172A]">1. Project Representation</h3>
             <p>
-              ARS Svasa is a G+22 storey residential landmark comprising 3 BHK luxury residences (1839 & 2083 Sq.Ft) situated at Sarjapura Road, Yamare, Bengaluru. All architectural representations, master plans, floor layouts, and 3D visual renderings are artistic impressions.
+              ARS Svaasa is a G+22 storey residential landmark comprising 3 BHK luxury residences (1839 & 2083 Sq.Ft) situated at Sarjapura Road, Yamare, Bengaluru. All architectural representations, master plans, floor layouts, and 3D visual renderings are artistic impressions.
             </p>
           </div>
 

@@ -84,7 +84,7 @@ export default function App() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        project: "ARS Svasa",
+        project: "ARS Svaasa",
         developer: "ARS Infraa",
         id: newLead.id,
         fullName: newLead.fullName,
@@ -241,7 +241,7 @@ export default function App() {
             setPreselectedUnit(null);
             setOfferOpen(true);
           }}
-          className="flex-1 flex items-center justify-center bg-[#C5A880] hover:bg-[#D4BC98] text-[#0E172A] font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer"
+          className="flex-1 flex items-center justify-center bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer"
         >
           <span>Enquire Now</span>
         </button>
@@ -249,7 +249,7 @@ export default function App() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20ARS%20Svasa%20by%20ARS%20Infraa.%20Please%20share%20details."
+        href="https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20ARS%20Svaasa%20by%20ARS%20Infraa.%20Please%20share%20details."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-[76px] md:bottom-8 right-4 md:right-8 bg-[#25D366] text-white p-3.5 md:p-4 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_30px_rgba(37,211,102,0.6)] hover:scale-110 transition-all z-40 flex items-center justify-center animate-fade-in"

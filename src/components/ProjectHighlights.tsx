@@ -19,7 +19,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           <source srcSet="/assets/silver_horizon/second-sec.webp" type="image/webp" />
           <img
             src="/assets/silver_horizon/second-sec.webp"
-            alt="ARS Svasa Luxury Landmark & Living"
+            alt="ARS Svaasa Luxury Landmark & Living"
             className="w-full h-full object-cover object-center"
             loading="lazy"
           />
@@ -165,7 +165,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           <source srcSet="/assets/silver_horizon/second-mob.webp" type="image/webp" />
           <img
             src="/assets/silver_horizon/second-mob.webp"
-            alt="ARS Svasa Luxury Landmark & Living"
+            alt="ARS Svaasa Luxury Landmark & Living"
             className="w-full h-full object-cover object-top"
             loading="lazy"
           />

@@ -26,7 +26,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           <div className="space-y-4 max-w-xl">
             <img
               src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-              alt="ARS Svasa"
+              alt="ARS Svaasa"
               className="h-12 sm:h-16 w-auto object-contain filter brightness-0 invert"
             />
             <p className="text-xl sm:text-2xl md:text-3xl font-normal text-white/90 tracking-tight leading-snug">
@@ -37,7 +37,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           <div>
             <button
               onClick={() => handleScrollTo("lead-capture-section")}
-              className="bg-white hover:bg-neutral-200 text-black text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center gap-2"
+              className="bg-[#0B4D8C] hover:bg-[#003B70] text-white text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center gap-2 border border-white/20"
             >
               <span>Book a private tour</span>
               <ArrowUpRight className="h-4 w-4" />

@@ -104,7 +104,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
       {/* Full-bleed Background Image with tower clearly visible on the left */}
       <img
         src="/assets/silver_horizon/tower_day_view.webp"
-        alt="ARS Svasa Luxury Architecture"
+        alt="ARS Svaasa Luxury Architecture"
         className="absolute inset-0 w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
         loading="lazy"
         decoding="async"
@@ -213,7 +213,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center gap-2 bg-black hover:bg-neutral-800 text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
+                    className="w-full flex items-center justify-center gap-2 bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
                   >
                     {loading ? (
                       <>
@@ -245,7 +245,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                     Registration Confirmed
                   </h3>
                   <p className="font-body text-xs sm:text-sm text-[#4A5260] leading-relaxed">
-                    Thank you, <strong>{formData.fullName}</strong>. The ARS Svasa catalog and layout details are ready.
+                    Thank you, <strong>{formData.fullName}</strong>. The ARS Svaasa catalog and layout details are ready.
                   </p>
                 </div>
 

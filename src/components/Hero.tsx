@@ -17,7 +17,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
           <source media="(max-width: 640px)" srcSet="/assets/silver_horizon/banner_mobile.webp" type="image/webp" />
           <img
             src="/assets/silver_horizon/banner.webp"
-            alt="ARS Svasa Architectural Landmark"
+            alt="ARS Svaasa Architectural Landmark"
             className="w-full h-full object-cover object-[center_top] sm:object-[center_top]"
             fetchPriority="high"
             loading="eager"
@@ -44,7 +44,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
           <h1 
             className="font-display text-2xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.15] drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] capitalize"
           >
-            Welcome to Svasa <br className="hidden sm:inline" />
+            Welcome to Svaasa <br className="hidden sm:inline" />
             Luxury Living, Elevated
           </h1>
 
@@ -61,7 +61,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
           >
             <button
               onClick={onOpenEnquiry}
-              className="bg-[#090F1D]/90 hover:bg-black text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-white/20 hover:border-white/40 transition-all shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
+              className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-white/20 transition-all shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
             >
               Book today
             </button>

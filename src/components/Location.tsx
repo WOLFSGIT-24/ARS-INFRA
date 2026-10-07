@@ -32,7 +32,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="ARS Svasa | Sarjapura Road Location"
+        title="ARS Svaasa | Sarjapura Road Location"
         className="w-full h-full"
       />
     );
@@ -58,7 +58,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
           {/* Right Description */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
-              Located in the vibrant Neighborhood, Svasa puts you in the center of it all. Explore trendy boutiques, dine at acclaimed restaurants, or immerse yourself in the cultural scene—all just steps from your doorstep. With easy access to public transportation and major highways, commuting is a breeze, allowing you to enjoy everything the city has to offer.
+              Located in the vibrant Neighborhood, Svaasa puts you in the center of it all. Explore trendy boutiques, dine at acclaimed restaurants, or immerse yourself in the cultural scene—all just steps from your doorstep. With easy access to public transportation and major highways, commuting is a breeze, allowing you to enjoy everything the city has to offer.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
               href="https://maps.app.goo.gl/6TbV3FTZdvuHnmDD9?g_st=aw"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-black hover:bg-neutral-800 text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full transition-all shadow-md flex items-center justify-center text-center cursor-pointer"
+              className="w-full bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full transition-all shadow-md flex items-center justify-center text-center cursor-pointer"
             >
               Open location in Google Maps
             </a>
