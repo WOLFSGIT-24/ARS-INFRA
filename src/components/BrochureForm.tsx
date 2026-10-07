@@ -103,7 +103,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
     <section id="lead-capture-section" className="w-full relative min-h-[560px] md:min-h-[640px] overflow-hidden flex items-center py-12 md:py-20">
       {/* Full-bleed Background Image with tower clearly visible on the left */}
       <img
-        src="/assets/silver_horizon/gallery_01.webp"
+        src="/assets/silver_horizon/cta.png"
         alt="ARS Svaasa Luxury Architecture"
         className="absolute inset-0 w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
         loading="lazy"
