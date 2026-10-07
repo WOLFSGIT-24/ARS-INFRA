@@ -22,60 +22,52 @@ export default function FloorPlans({
   // Residence cards with exact floor plan blueprint images and brochure data
   const residenceCards = [
     {
-      unitData: floorPlansData[0], // Unit 01
-      image: "/assets/silver_horizon/unit_plan_01.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 01 Residence",
-      location: "West Facing • 10 Ft Ceilings",
-      sizeBadge: "1,890 SQFT",
+      unitData: { ...floorPlansData[0], title: "Typical Floor - Unit 1", imageUrl: "/assets/silver_horizon/floor_plan_typical_1.webp" },
+      image: "/assets/silver_horizon/floor_plan_typical_1.webp",
+      tag: "Typical Floor",
+      name: "Unit 1",
+      location: "Standard Layout",
+      sizeBadge: "Explore",
     },
     {
-      unitData: floorPlansData[1], // Unit 02
-      image: "/assets/silver_horizon/unit_plan_02.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 02 Residence",
-      location: "North Facing • Daylight Deck",
-      sizeBadge: "1,990 SQFT",
+      unitData: { ...floorPlansData[1], title: "Typical Floor - Unit 2", imageUrl: "/assets/silver_horizon/floor_plan_typical_2.webp" },
+      image: "/assets/silver_horizon/floor_plan_typical_2.webp",
+      tag: "Typical Floor",
+      name: "Unit 2",
+      location: "Standard Layout",
+      sizeBadge: "Explore",
     },
     {
-      unitData: floorPlansData[2], // Unit 03
-      image: "/assets/silver_horizon/unit_plan_03.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 03 Grand",
-      location: "North Facing • Lalbagh View",
-      sizeBadge: "2,015 SQFT",
+      unitData: { ...floorPlansData[0], title: "Typical Floor - Unit 4", imageUrl: "/assets/silver_horizon/floor_plan_typical_4.webp" },
+      image: "/assets/silver_horizon/floor_plan_typical_4.webp",
+      tag: "Typical Floor",
+      name: "Unit 4",
+      location: "Standard Layout",
+      sizeBadge: "Explore",
     },
     {
-      unitData: floorPlansData[3], // Unit 04
-      image: "/assets/silver_horizon/unit_plan_04.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 04 Corner",
-      location: "North Facing • Triple Airflow",
-      sizeBadge: "1,905 SQFT",
+      unitData: { ...floorPlansData[1], title: "Private Terrace - Unit 1", imageUrl: "/assets/silver_horizon/floor_plan_terrace_1.webp" },
+      image: "/assets/silver_horizon/floor_plan_terrace_1.webp",
+      tag: "Private Terrace",
+      name: "Unit 1",
+      location: "Terrace Access",
+      sizeBadge: "Explore",
     },
     {
-      unitData: floorPlansData[4], // Unit 05
-      image: "/assets/silver_horizon/unit_plan_05.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 05 East",
-      location: "East Facing • Morning Sun",
-      sizeBadge: "1,990 SQFT",
+      unitData: { ...floorPlansData[0], title: "Private Terrace - Unit 2", imageUrl: "/assets/silver_horizon/floor_plan_terrace_2.webp" },
+      image: "/assets/silver_horizon/floor_plan_terrace_2.webp",
+      tag: "Private Terrace",
+      name: "Unit 2",
+      location: "Terrace Access",
+      sizeBadge: "Explore",
     },
     {
-      unitData: floorPlansData[5] || floorPlansData[0], // Unit 06
-      image: "/assets/silver_horizon/unit_plan_06.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 06 East",
-      location: "East Facing • Buffer Separation",
-      sizeBadge: "1,975 SQFT",
-    },
-    {
-      unitData: floorPlansData[6] || floorPlansData[0], // Unit 07
-      image: "/assets/silver_horizon/unit_plan_07.webp",
-      tag: "3 Bedrooms / 3 Bath",
-      name: "Unit 07 East",
-      location: "East Facing • Vastu Compliant",
-      sizeBadge: "1,985 SQFT",
+      unitData: { ...floorPlansData[1], title: "Private Terrace - Unit 4", imageUrl: "/assets/silver_horizon/floor_plan_terrace_4.webp" },
+      image: "/assets/silver_horizon/floor_plan_terrace_4.webp",
+      tag: "Private Terrace",
+      name: "Unit 4",
+      location: "Terrace Access",
+      sizeBadge: "Explore",
     },
   ];
 
