@@ -241,7 +241,7 @@ export default function App() {
             setPreselectedUnit(null);
             setOfferOpen(true);
           }}
-          className="flex-1 flex items-center justify-center bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer"
+          className="flex-1 flex items-center justify-center bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer"
         >
           <span>Enquire Now</span>
         </button>

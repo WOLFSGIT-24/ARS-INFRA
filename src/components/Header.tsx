@@ -90,7 +90,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
           <div className="flex items-center gap-2 sm:gap-3">
             <button
               onClick={onOpenBooking}
-              className="hidden sm:inline-flex bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-white/20 transition-all shadow-md cursor-pointer tracking-wide"
+              className="hidden sm:inline-flex bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-white/20 transition-all shadow-md cursor-pointer tracking-wide"
             >
               Get started
             </button>
@@ -98,7 +98,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer bg-[#0B4D8C]/80 backdrop-blur-md"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer bg-[#B36B4C]/80 backdrop-blur-md"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? (
@@ -145,7 +145,7 @@ export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="w-full bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-sm font-semibold py-3.5 rounded-full shadow-lg"
+              className="w-full bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-sm font-semibold py-3.5 rounded-full shadow-lg"
             >
               Book a Site Visit
             </button>

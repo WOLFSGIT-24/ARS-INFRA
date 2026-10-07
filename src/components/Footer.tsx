@@ -37,7 +37,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           <div>
             <button
               onClick={() => handleScrollTo("lead-capture-section")}
-              className="bg-[#0B4D8C] hover:bg-[#003B70] text-white text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center gap-2 border border-white/20"
+              className="bg-[#B36B4C] hover:bg-[#8F563D] text-white text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center gap-2 border border-white/20"
             >
               <span>Book a private tour</span>
               <ArrowUpRight className="h-4 w-4" />

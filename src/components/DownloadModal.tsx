@@ -201,7 +201,7 @@ export default function DownloadModal({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-70 transition-all cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs font-bold tracking-widest uppercase py-4 rounded-lg shadow-lg disabled:opacity-70 transition-all cursor-pointer"
                 >
                   {loading ? (
                     <span className="flex items-center gap-2">

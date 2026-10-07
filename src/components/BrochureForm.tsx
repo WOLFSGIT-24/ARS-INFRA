@@ -103,7 +103,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
     <section id="lead-capture-section" className="w-full relative min-h-[560px] md:min-h-[640px] overflow-hidden flex items-center py-12 md:py-20">
       {/* Full-bleed Background Image with tower clearly visible on the left */}
       <img
-        src="/assets/silver_horizon/tower_day_view.webp"
+        src="/assets/silver_horizon/gallery_01.webp"
         alt="ARS Svaasa Luxury Architecture"
         className="absolute inset-0 w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
         loading="lazy"
@@ -213,7 +213,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center gap-2 bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
+                    className="w-full flex items-center justify-center gap-2 bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md disabled:opacity-50 cursor-pointer transition-all hover:scale-[1.01] active:scale-98"
                   >
                     {loading ? (
                       <>

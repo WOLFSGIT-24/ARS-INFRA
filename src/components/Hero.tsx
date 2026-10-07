@@ -61,7 +61,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
           >
             <button
               onClick={onOpenEnquiry}
-              className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-white/20 transition-all shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
+              className="bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-white/20 transition-all shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
             >
               Book today
             </button>

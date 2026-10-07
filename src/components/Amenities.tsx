@@ -62,7 +62,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
             <div>
               <button
                 onClick={onOpenBooking}
-                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
+                className="bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center"
               >
                 Book now
               </button>

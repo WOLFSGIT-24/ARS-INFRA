@@ -1,13 +1,32 @@
 import React, { useState } from "react";
-import { ZoomIn, X } from "lucide-react";
+import { ZoomIn, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface MasterPlanProps {
   onSelectUnit?: (unitType: string) => void;
   onOpenBooking?: () => void;
 }
 
+const masterPlanImages = [
+  "/assets/silver_horizon/master_plan_ground.webp",
+  "/assets/silver_horizon/master_plan_first.webp",
+  "/assets/silver_horizon/master_plan_typical.webp",
+  "/assets/silver_horizon/master_plan_typical_amenities.webp",
+  "/assets/silver_horizon/master_plan_20th.webp"
+];
+
 export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanProps) {
   const [modalOpen, setModalOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? masterPlanImages.length - 1 : prev - 1));
+  };
+
+  const handleNext = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setCurrentIndex((prev) => (prev === masterPlanImages.length - 1 ? 0 : prev + 1));
+  };
 
   return (
     <section id="master-plan" className="w-full py-16 sm:py-24 bg-[#FAF8F5] text-[#161A22] overflow-hidden font-body">
@@ -31,7 +50,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <div>
               <button
                 onClick={() => setModalOpen(true)}
-                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center gap-2"
+                className="bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide inline-flex items-center justify-center gap-2"
               >
                 <ZoomIn className="h-4 w-4" />
                 <span>Enlarge Master Plan</span>
@@ -44,19 +63,46 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
         {/* Big Minimalist Master Plan Image Showcase Card */}
         <div className="bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 shadow-sm relative group overflow-hidden">
           
-          {/* Main Master Plan Image Container */}
+          {/* Main Master Plan Slider Container */}
           <div
             onClick={() => setModalOpen(true)}
             className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] bg-[#FAF8F5] rounded-xl sm:rounded-2xl overflow-hidden flex items-center justify-center cursor-pointer border border-gray-100"
           >
             <img
-              src="/assets/silver_horizon/master_plan_layout.webp"
-              alt="ARS Svaasa Master Plan & Parking Layout"
+              src={masterPlanImages[currentIndex]}
+              alt={`ARS Svaasa Master Plan ${currentIndex + 1}`}
               loading="lazy"
               className="w-full h-full object-contain p-2 sm:p-6 transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
 
-            {/* Subtle Zoom Hint on Hover */}
+            {/* Slider Navigation Arrows */}
+            <button
+              onClick={handlePrev}
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-md z-10 transition-all opacity-0 group-hover:opacity-100"
+            >
+              <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+            </button>
+            
+            <button
+              onClick={handleNext}
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-md z-10 transition-all opacity-0 group-hover:opacity-100"
+            >
+              <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
+            </button>
+
+            {/* Slider Dots */}
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+              {masterPlanImages.map((_, idx) => (
+                <div
+                  key={idx}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    idx === currentIndex ? "w-6 bg-[#B36B4C]" : "w-2 bg-gray-400/50"
+                  }`}
+                />
+              ))}
+            </div>
+
+            {/* Subtle Zoom Hint on Hover (only visible if not hovering over buttons) */}
             <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
               <div className="bg-black/80 backdrop-blur-md text-white px-5 py-2.5 rounded-full text-xs font-semibold flex items-center gap-2 shadow-lg">
                 <ZoomIn className="h-4 w-4" />
@@ -117,12 +163,43 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
               </button>
             </div>
 
-            <div className="overflow-auto flex-1 my-4 flex items-center justify-center bg-[#FAF8F5] p-2 sm:p-6 rounded-xl border border-gray-100">
+            <div className="relative overflow-auto flex-1 my-4 flex items-center justify-center bg-[#FAF8F5] p-2 sm:p-6 rounded-xl border border-gray-100 group">
               <img
-                src="/assets/silver_horizon/master_plan_layout.webp"
-                alt="ARS Svaasa Full Master Plan"
+                src={masterPlanImages[currentIndex]}
+                alt={`ARS Svaasa Full Master Plan ${currentIndex + 1}`}
                 className="max-w-full max-h-[70vh] object-contain"
               />
+              
+              {/* Modal Navigation Arrows */}
+              <button
+                onClick={handlePrev}
+                className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-4 rounded-full shadow-xl z-10 transition-all opacity-0 group-hover:opacity-100"
+              >
+                <ChevronLeft className="h-6 w-6 sm:h-8 sm:w-8" />
+              </button>
+              
+              <button
+                onClick={handleNext}
+                className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-4 rounded-full shadow-xl z-10 transition-all opacity-0 group-hover:opacity-100"
+              >
+                <ChevronRight className="h-6 w-6 sm:h-8 sm:w-8" />
+              </button>
+              
+              {/* Modal Slider Dots */}
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                {masterPlanImages.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setCurrentIndex(idx);
+                    }}
+                    className={`h-2.5 rounded-full transition-all duration-300 ${
+                      idx === currentIndex ? "w-8 bg-[#B36B4C]" : "w-2.5 bg-gray-400"
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
 
             <div className="flex justify-between items-center pt-2">
@@ -131,7 +208,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
               </span>
               <button
                 onClick={() => setModalOpen(false)}
-                className="px-6 py-2.5 bg-[#0B4D8C] hover:bg-[#003B70] text-white rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer"
+                className="px-6 py-2.5 bg-[#B36B4C] hover:bg-[#8F563D] text-white rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer"
               >
                 Close
               </button>

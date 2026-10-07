@@ -212,7 +212,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs font-bold tracking-[0.2em] uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-3 transition-all"
+                className="w-full bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs font-bold tracking-[0.2em] uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-3 transition-all"
               >
                 {loading ? (
                   <span className="h-4 w-4 border-2 border-white border-t-transparent rounded-full animate-spin" />

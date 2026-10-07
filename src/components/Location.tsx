@@ -111,7 +111,7 @@ export default function Location({ onOpenEnquiry }: LocationProps) {
               href="https://maps.app.goo.gl/6TbV3FTZdvuHnmDD9?g_st=aw"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full transition-all shadow-md flex items-center justify-center text-center cursor-pointer"
+              className="w-full bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full transition-all shadow-md flex items-center justify-center text-center cursor-pointer"
             >
               Open location in Google Maps
             </a>

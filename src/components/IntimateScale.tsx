@@ -9,24 +9,20 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
   // Bottom Auto-Scrolling Building Images
   const autoScrollImages = [
     {
-      src: "/assets/silver_horizon/building_slide_01.webp",
-      alt: "ARS Svaasa Architectural View 1",
+      src: "/assets/silver_horizon/gallery_01.webp",
+      alt: "ARS Svaasa Gallery 1",
     },
     {
-      src: "/assets/silver_horizon/building_slide_02.webp",
-      alt: "ARS Svaasa Facade View 2",
+      src: "/assets/silver_horizon/gallery_02.webp",
+      alt: "ARS Svaasa Gallery 2",
     },
     {
-      src: "/assets/silver_horizon/building_slide_03.webp",
-      alt: "ARS Svaasa Elevated Landmark View 3",
+      src: "/assets/silver_horizon/gallery_03.webp",
+      alt: "ARS Svaasa Gallery 3",
     },
     {
-      src: "/assets/silver_horizon/building_slide_04.webp",
-      alt: "ARS Svaasa Residential Skyline View 4",
-    },
-    {
-      src: "/assets/silver_horizon/building_slide_05.webp",
-      alt: "ARS Svaasa Tower Perspective View 5",
+      src: "/assets/silver_horizon/gallery_04.webp",
+      alt: "ARS Svaasa Gallery 4",
     },
   ];
 
@@ -55,7 +51,7 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
             <div>
               <button
                 onClick={onOpenEnquiry}
-                className="bg-[#0B4D8C] hover:bg-[#003B70] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
+                className="bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold px-8 py-3 rounded-full transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer tracking-wide"
               >
                 Explore
               </button>
