@@ -2,6 +2,7 @@ import React, { useState, useEffect, Suspense, lazy } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import { LeadSubmission } from "./types";
+import { motion } from "motion/react";
 
 // Lazy-load below-the-fold components to maximize mobile FCP / LCP performance
 const IntimateScale = lazy(() => import("./components/IntimateScale"));
@@ -22,6 +23,19 @@ const OfferModal = lazy(() => import("./components/OfferModal"));
 const DownloadModal = lazy(() => import("./components/DownloadModal"));
 
 const LOCAL_STORAGE_KEY = "silver_horizon_leads";
+
+function AnimatedSection({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 export default function App() {
   const [leads, setLeads] = useState<LeadSubmission[]>([]);
@@ -175,54 +189,69 @@ export default function App() {
       {/* Below-the-fold sections loaded asynchronously */}
       <Suspense fallback={<div className="min-h-screen bg-[#090F1D]" />}>
         {/* Property Architecture & Landmark Overview */}
-        <IntimateScale 
-          onRequestDownload={handleRequestDownload} 
-          onOpenEnquiry={handleHeroEnquiry}
-        />
+        <AnimatedSection>
+          <IntimateScale 
+            onRequestDownload={handleRequestDownload} 
+            onOpenEnquiry={handleHeroEnquiry}
+          />
+        </AnimatedSection>
 
         {/* Project Highlights 8-Key Stats Grid */}
-        <ProjectHighlights
-          onRequestDownload={handleRequestDownload}
-          onOpenBooking={handleHeroEnquiry}
-        />
+        <AnimatedSection>
+          <ProjectHighlights
+            onRequestDownload={handleRequestDownload}
+            onOpenBooking={handleHeroEnquiry}
+          />
+        </AnimatedSection>
 
         {/* Integrated Architectural Master Plan */}
-        <MasterPlan 
-          onSelectUnit={handleSelectUnitType} 
-          onOpenBooking={handleHeroEnquiry}
-        />
+        <AnimatedSection>
+          <MasterPlan 
+            onSelectUnit={handleSelectUnitType} 
+            onOpenBooking={handleHeroEnquiry}
+          />
+        </AnimatedSection>
 
         {/* Curated Amenities Showcase (Clubhouse, Sports, Nature, Smart Living) */}
-        <Amenities 
-          onOpenBooking={handleHeroEnquiry} 
-          onRequestDownload={handleRequestDownload}
-        />
+        <AnimatedSection>
+          <Amenities 
+            onOpenBooking={handleHeroEnquiry} 
+            onRequestDownload={handleRequestDownload}
+          />
+        </AnimatedSection>
 
         {/* Interactive Floor Drafting Plans (Units 01-07, 4 BHK Duplex) */}
-        <FloorPlans 
-          onSelectUnit={handleSelectUnitType} 
-          isUnlocked={floorPlansUnlocked}
-          onUnlockRequest={() => setBookingOpen(true)}
-          onOpenBooking={handleHeroEnquiry}
-        />
-
+        <AnimatedSection>
+          <FloorPlans 
+            onSelectUnit={handleSelectUnitType} 
+            isUnlocked={floorPlansUnlocked}
+            onUnlockRequest={() => setBookingOpen(true)}
+            onOpenBooking={handleHeroEnquiry}
+          />
+        </AnimatedSection>
 
         {/* Location Connectivity Grid & Regional Infrastructure */}
-        <Location onOpenEnquiry={handleHeroEnquiry} />
+        <AnimatedSection>
+          <Location onOpenEnquiry={handleHeroEnquiry} />
+        </AnimatedSection>
 
         {/* Brochure / Lead Intake Form Section */}
-        <BrochureForm 
-          onAddLead={handleAddLead} 
-          preselectedUnit={preselectedUnit} 
-        />
+        <AnimatedSection>
+          <BrochureForm 
+            onAddLead={handleAddLead} 
+            preselectedUnit={preselectedUnit} 
+          />
+        </AnimatedSection>
 
         {/* Global Footer */}
-        <Footer 
-          onOpenPrivacy={() => setPrivacyOpen(true)}
-          onOpenTerms={() => setTermsOpen(true)}
-          onOpenBooking={handleHeroEnquiry}
-          onRequestDownload={handleRequestDownload}
-        />
+        <AnimatedSection>
+          <Footer 
+            onOpenPrivacy={() => setPrivacyOpen(true)}
+            onOpenTerms={() => setTermsOpen(true)}
+            onOpenBooking={handleHeroEnquiry}
+            onRequestDownload={handleRequestDownload}
+          />
+        </AnimatedSection>
       </Suspense>
 
       {/* Fixed Mobile Bottom CTA Bar */}
