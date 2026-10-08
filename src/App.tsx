@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 // Lazy-load below-the-fold components to maximize mobile FCP / LCP performance
 const IntimateScale = lazy(() => import("./components/IntimateScale"));
-const ProjectHighlights = lazy(() => import("./components/ProjectHighlights"));
+
 const Amenities = lazy(() => import("./components/Amenities"));
 const MasterPlan = lazy(() => import("./components/MasterPlan"));
 const FloorPlans = lazy(() => import("./components/FloorPlans"));
@@ -196,13 +196,7 @@ export default function App() {
           />
         </AnimatedSection>
 
-        {/* Project Highlights 8-Key Stats Grid */}
-        <AnimatedSection>
-          <ProjectHighlights
-            onRequestDownload={handleRequestDownload}
-            onOpenBooking={handleHeroEnquiry}
-          />
-        </AnimatedSection>
+
 
         {/* Integrated Architectural Master Plan */}
         <AnimatedSection>
