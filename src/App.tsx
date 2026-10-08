@@ -168,7 +168,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#090F1D] text-[#161A22] overflow-x-hidden w-full font-body">
+    <div className="relative min-h-screen bg-[#090F1D] text-[#161A22] w-full font-body">
       {/* Upper Navigation Header */}
       <Header
         onOpenBooking={() => {

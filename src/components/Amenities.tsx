@@ -1,4 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { 
+  PartyPopper, Building, TreePine, Dumbbell, Waves, Gamepad2, 
+  ArrowLeft, ArrowRight, Trophy, Ticket, Dog, Flower2, Circle, Smile 
+} from "lucide-react";
 
 interface AmenitiesProps {
   onOpenBooking?: () => void;
@@ -6,55 +10,45 @@ interface AmenitiesProps {
 }
 
 export default function Amenities({ onOpenBooking, onRequestDownload }: AmenitiesProps) {
-  // Curated slider items from Amanites
-  const sliderItems = [
-    {
-      src: "/assets/silver_horizon/amenities_slide_03.webp",
-      title: "The Pavilion Clubhouse Pool",
-      subtitle: "Indoor Temperature Controlled Heated Pool & Spa Lounge",
-      category: "14,962 SQFT OF LUXURY",
-    },
-    {
-      src: "/assets/silver_horizon/amenities_slide_02.webp",
-      title: "Strength & Cardio Gymnasium",
-      subtitle: "State of the Art Fitness Arena & Training Zone",
-      category: "HEALTH & WELLNESS",
-    },
-    {
-      src: "/assets/silver_horizon/amenities_slide_01.webp",
-      title: "Open Air Sunken Pool Deck",
-      subtitle: "Scenic Sun Deck with Built-in Water Recliners & Cabanas",
-      category: "SERENITY & RELAXATION",
-    },
+  const amenitiesList = [
+    { icon: PartyPopper, label: "OUTDOOR\nPARTY LAWN" },
+    { icon: Building, label: "CLUB HOUSE" },
+    { icon: TreePine, label: "PARK &\nGARDEN" },
+    { icon: Dumbbell, label: "INDOOR GYM" },
+    { icon: Waves, label: "SWIMMING\nPOOL WITH\nTODDLERS'\nPOOL" },
+    { icon: Gamepad2, label: "INDOOR GAME\nROOM" },
+    { icon: Trophy, label: "MINI FOOTBALL\nGROUND" },
+    { icon: Ticket, label: "AMPHITHEATER" },
+    { icon: Dog, label: "PET PARK" },
+    { icon: Flower2, label: "YOGA &\nMEDITATION HALL" },
+    { icon: Circle, label: "BASKETBALL\nCOURT" },
+    { icon: Smile, label: "CHILDREN\nPLAY AREA" },
   ];
 
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [page, setPage] = useState(0);
+  
+  // Calculate items per page based on screen size (6 on desktop, 4 on tablet, 2 on mobile roughly, but we'll use a fixed track slide approach)
+  const totalPages = Math.ceil(amenitiesList.length / 6);
 
-  // Smooth auto-slide every 4.2 seconds
-  useEffect(() => {
-    if (isPaused) return;
-    const timer = setInterval(() => {
-      setCurrentIdx((prev) => (prev + 1) % sliderItems.length);
-    }, 4200);
-    return () => clearInterval(timer);
-  }, [isPaused, sliderItems.length]);
+  const nextPage = () => {
+    setPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
 
   return (
-    <section id="amenities" className="w-full py-16 sm:py-24 bg-white text-[#161A22] overflow-hidden font-body">
+    <section id="amenities" className="w-full py-16 sm:py-24 bg-[#FAFAF8] text-[#161A22] overflow-hidden font-body relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12">
         
-        {/* Top Header matching reference screenshot (Left large headline, Right description + Book now button) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-10 sm:mb-12">
-          
-          {/* Left Large Headline */}
+        {/* Top Header */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-16 sm:mb-20">
           <div className="lg:col-span-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-[#161A22] leading-[1.15]">
               35+ thoughtfully curated amenities
             </h2>
           </div>
-
-          {/* Right Description & Book Now CTA */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-gray-500 leading-relaxed font-normal">
               From the expansive 14,962 sq.ft. Pavilion Clubhouse to active sports arenas and quiet nature trails, every space is designed around daily joy, wellness, and community warmth.
@@ -68,60 +62,74 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
               </button>
             </div>
           </div>
+        </div>
+
+        {/* Icon Slider Grid Layout */}
+        <div className="relative w-full flex items-center justify-center px-4 md:px-16">
+          
+          {/* Decorative Left Arrow */}
+          <button 
+            onClick={prevPage}
+            className="absolute left-0 z-10 flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 text-gray-500 hover:text-gray-900 cursor-pointer transition-colors bg-white shadow-sm hover:shadow active:scale-95"
+            aria-label="Previous amenities"
+          >
+            <ArrowLeft className="w-4 h-4" />
+          </button>
+
+          {/* Slider Viewport */}
+          <div className="overflow-hidden w-full max-w-5xl mx-auto">
+            <div 
+              className="flex transition-transform duration-700 ease-in-out"
+              style={{ transform: `translateX(-${page * 100}%)` }}
+            >
+              {/* Group items by 6 (2 rows of 3) per page */}
+              {Array.from({ length: totalPages }).map((_, pageIndex) => (
+                <div key={pageIndex} className="w-full shrink-0 flex-none px-2">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 sm:gap-x-12 md:gap-x-24 gap-y-12 sm:gap-y-16 w-full">
+                    {amenitiesList.slice(pageIndex * 6, (pageIndex + 1) * 6).map((item, idx) => {
+                      const Icon = item.icon;
+                      return (
+                        <div key={idx} className="flex flex-col items-center justify-center group text-center cursor-pointer">
+                          {/* Circle */}
+                          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-[#F5F2EB] flex items-center justify-center mb-4 sm:mb-6 transition-transform duration-500 group-hover:scale-105 shadow-sm border border-[#EBE6DA]">
+                            <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#2C3338] stroke-[1.5]" />
+                          </div>
+                          {/* Label */}
+                          <span className="text-[9px] sm:text-[10px] font-semibold text-[#161A22] uppercase tracking-[0.15em] whitespace-pre-line leading-relaxed">
+                            {item.label}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Decorative Right Arrow */}
+          <button 
+            onClick={nextPage}
+            className="absolute right-0 z-10 flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 text-gray-500 hover:text-gray-900 cursor-pointer transition-colors bg-white shadow-sm hover:shadow active:scale-95"
+            aria-label="Next amenities"
+          >
+            <ArrowRight className="w-4 h-4" />
+          </button>
 
         </div>
 
-        {/* Large Smooth Auto-Sliding Image Banner matching screenshot */}
-        <div
-          className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/10] bg-[#0E172A] shadow-xl border border-gray-100 group"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          {/* Slides Stack with smooth fade cross-dissolve */}
-          {sliderItems.map((item, idx) => (
-            <div
+        {/* Pagination Dots */}
+        <div className="flex justify-center items-center gap-2 mt-12">
+          {Array.from({ length: totalPages }).map((_, idx) => (
+            <button
               key={idx}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                idx === currentIdx ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+              onClick={() => setPage(idx)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                page === idx ? "w-8 bg-[#B36B4C]" : "w-2 bg-gray-300 hover:bg-gray-400"
               }`}
-            >
-              <img
-                src={item.src}
-                alt={item.title}
-                loading={idx === 0 ? "eager" : "lazy"}
-                className="w-full h-full object-cover transform transition-transform duration-7000 ease-out scale-100 hover:scale-105"
-              />
-              {/* Subtle ambient bottom gradient for captions */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/10 pointer-events-none" />
-            </div>
+              aria-label={`Go to page ${idx + 1}`}
+            />
           ))}
-
-          {/* Floating Left Slide Caption & Category Pill */}
-          <div className="absolute bottom-3.5 sm:bottom-6 left-3.5 sm:left-6 z-20 flex flex-col items-start gap-1 sm:gap-1.5 text-white max-w-md pr-4">
-            <span className="text-[9px] sm:text-xs uppercase tracking-[0.2em] font-semibold bg-white/20 backdrop-blur-md px-2.5 sm:px-3 py-1 rounded-full border border-white/20">
-              {sliderItems[currentIdx].category}
-            </span>
-            <h3 className="text-base sm:text-2xl font-medium tracking-tight drop-shadow-md">
-              {sliderItems[currentIdx].title}
-            </h3>
-            <p className="text-xs sm:text-sm text-white/80 font-normal hidden sm:block drop-shadow">
-              {sliderItems[currentIdx].subtitle}
-            </p>
-          </div>
-
-          {/* Slide Progress Dots */}
-          <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 sm:px-3 py-1.5 rounded-full border border-white/10">
-            {sliderItems.map((_, dotIdx) => (
-              <button
-                key={dotIdx}
-                onClick={() => setCurrentIdx(dotIdx)}
-                className={`h-1.5 rounded-full transition-all cursor-pointer ${
-                  dotIdx === currentIdx ? "w-5 sm:w-6 bg-white" : "w-1.5 bg-white/40 hover:bg-white/70"
-                }`}
-                aria-label={`Go to slide ${dotIdx + 1}`}
-              />
-            ))}
-          </div>
         </div>
 
       </div>
