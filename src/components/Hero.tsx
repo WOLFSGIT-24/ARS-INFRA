@@ -13,19 +13,14 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
     >
       {/* Background Photography - Instant High-Priority LCP Render */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <picture>
-          <source media="(max-width: 640px)" srcSet="/assets/silver_horizon/banner_mobile.webp" type="image/webp" />
-          <img
-            src="/assets/silver_horizon/banner.webp"
-            alt="ARS Svaasa Architectural Landmark"
-            className="w-full h-full object-cover object-[center_top] sm:object-[center_top]"
-            fetchPriority="high"
-            loading="eager"
-            decoding="async"
-            width="1326"
-            height="900"
-          />
-        </picture>
+        <img
+          src="/assets/silver_horizon/banner.png"
+          alt="ARS Svaasa Architectural Landmark"
+          className="w-full h-full object-cover object-[center_top] sm:object-[center_top]"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+        />
 
         {/* Soft subtle sky gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1b4b82]/45 via-transparent to-transparent pointer-events-none" />
