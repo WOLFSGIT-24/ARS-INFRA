@@ -9,16 +9,8 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
   // Bottom Auto-Scrolling Building Images
   const autoScrollImages = [
     {
-      src: "/assets/silver_horizon/gallery_01.webp",
-      alt: "ARS Svaasa Gallery 1",
-    },
-    {
       src: "/assets/silver_horizon/gallery_02.webp",
       alt: "ARS Svaasa Gallery 2",
-    },
-    {
-      src: "/assets/silver_horizon/gallery_03.webp",
-      alt: "ARS Svaasa Gallery 3",
     },
     {
       src: "/assets/silver_horizon/gallery_04.webp",
