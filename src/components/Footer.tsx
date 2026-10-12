@@ -30,7 +30,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
               className="h-12 sm:h-16 w-auto object-contain filter brightness-0 invert"
             />
             <p className="text-xl sm:text-2xl md:text-3xl font-normal text-white/90 tracking-tight leading-snug">
-              A new benchmark in elevated living. G+22 storeys of luxury on Sarjapura Road.
+              A new benchmark in elevated living. B+G+26 storeys of luxury on Sarjapura Road.
             </p>
           </div>
 

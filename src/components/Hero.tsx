@@ -46,7 +46,7 @@ export default function Hero({ onOpenEnquiry, onRequestDownload }: HeroProps) {
           {/* Location, Specification, Price */}
           <div className="space-y-0.5 sm:space-y-1.5 text-white/95 font-body text-xs sm:text-base md:text-lg drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)] font-medium">
             <p>Sarjapura Road, Yamare, Bengaluru</p>
-            <p>3 BHK Luxury Residences (1839 & 2083 SQ.FT)</p>
+            <p>3 BHK Luxury Residences (1834 & 2084 SQ.FT)</p>
             <p>Price On Request</p>
           </div>
 

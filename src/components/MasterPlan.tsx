@@ -45,7 +45,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           {/* Right Description & Action */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
-              The ARS Svaasa masterplan offers a spacious and efficient layout, featuring well ventilated 1839 and 2083 sq. ft. units. Wide corridors, a dedicated fire lobby, and 3 high-speed lifts ensure easy access and safety, creating a perfect blend of luxury and practicality.
+              The ARS Svaasa masterplan offers a spacious and efficient layout, featuring well ventilated 1834 and 2084 sq. ft. units. Wide corridors, a dedicated fire lobby, and 3 high-speed lifts ensure easy access and safety, creating a perfect blend of luxury and practicality.
             </p>
             <div>
               <button
@@ -115,11 +115,11 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           <div className="mt-6 pt-5 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
             <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
               <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">No. of Flats</span>
-              <span className="text-base sm:text-lg font-bold">88 Flats</span>
+              <span className="text-base sm:text-lg font-bold">104 Flats</span>
             </div>
             <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
               <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">No. of Floors</span>
-              <span className="text-base sm:text-lg font-bold">G+22 Floors</span>
+              <span className="text-base sm:text-lg font-bold">B+G+26 Floors</span>
             </div>
             <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
               <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">Parking</span>
@@ -151,7 +151,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
                   ARS Svaasa: Site Master Plan & Parking Plan
                 </h3>
                 <p className="text-xs text-gray-500">
-                  G+22 Floors • 88 Flats • 1839 & 2083 Sq.Ft Units • Basement Parking
+                  B+G+26 Floors • 104 Flats • 1834 & 2084 Sq.Ft Units • Basement Parking
                 </p>
               </div>
               <button
