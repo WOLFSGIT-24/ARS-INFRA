@@ -193,22 +193,6 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
                 {errors.phone && <p className="text-red-500 text-[10px]">{errors.phone}</p>}
               </div>
 
-              <div className="space-y-1">
-                <label className="block text-xs font-bold font-body text-[#0E172A]">
-                  Residence Configuration
-                </label>
-                <select
-                  name="unitPreference"
-                  value={formData.unitPreference}
-                  onChange={handleChange}
-                  className="w-full bg-[#FAF8F5] border border-[#E5DED3] rounded-lg px-3.5 py-2.5 text-sm outline-none focus:border-[#0E172A] focus:bg-white font-body"
-                >
-                  <option value="3 BHK (1890 to 2015 SQFT)">3 BHK Residences (1890 to 2015 SQFT)</option>
-                  <option value="4 BHK Duplex (2975 to 3480 SQFT)">4 BHK Duplex Sky Collection (32nd Floor)</option>
-                  <option value="All Configurations">Explore All Configurations</option>
-                </select>
-              </div>
-
               <button
                 type="submit"
                 disabled={loading}

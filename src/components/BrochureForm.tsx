@@ -191,23 +191,6 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                   {errors.phone && <p className="text-red-500 text-[10px]">{errors.phone}</p>}
                 </div>
 
-                {/* Unit Preference */}
-                <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-[#0E172A] uppercase tracking-wider block">
-                    Residence Preference
-                  </label>
-                  <select
-                    id="unitType"
-                    value={formData.unitType}
-                    onChange={handleChange}
-                    className="w-full border border-[#E5DED3] rounded-lg px-3 py-2 bg-[#FAF8F5] text-xs sm:text-sm font-body outline-none focus:border-[#0E172A] focus:bg-white"
-                  >
-                    <option value="3 BHK (1890 to 2015 SQFT)">3 BHK Residences (1890 to 2015 SQFT)</option>
-                    <option value="4 BHK Duplex (2975 to 3480 SQFT)">4 BHK Duplex Sky Collection (32nd Floor)</option>
-                    <option value="Both Options">Explore All Configurations</option>
-                  </select>
-                </div>
-
                 {/* Submit Button */}
                 <div className="pt-1">
                   <button
