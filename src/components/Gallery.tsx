@@ -57,6 +57,11 @@ const galleryImages = [
     title: "Night Architectural Illumination",
     category: "Landmark Elevation",
   },
+  {
+    src: "/assets/silver_horizon/gallery_05.webp",
+    title: "Architectural Elevation",
+    category: "Landmark Elevation",
+  },
 ];
 
 export default function Gallery() {

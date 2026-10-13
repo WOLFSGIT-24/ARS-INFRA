@@ -16,6 +16,10 @@ export default function IntimateScale({ onRequestDownload, onOpenEnquiry }: Inti
       src: "/assets/silver_horizon/gallery_04.webp",
       alt: "ARS Svaasa Gallery 4",
     },
+    {
+      src: "/assets/silver_horizon/gallery_05.webp",
+      alt: "ARS Svaasa Gallery 5",
+    },
   ];
 
   return (
