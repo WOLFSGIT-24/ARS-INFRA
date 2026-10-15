@@ -16,6 +16,11 @@ export default defineConfig(() => {
       minify: 'esbuild' as const,
       cssMinify: 'esbuild' as const,
       rollupOptions: {
+        // 404.html is served by Vercel (with a 404 status) for unknown paths
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          notFound: path.resolve(__dirname, '404.html'),
+        },
         output: {
           manualChunks: {
             'vendor-react': ['react', 'react-dom'],

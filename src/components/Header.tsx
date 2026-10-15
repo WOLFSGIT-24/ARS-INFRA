@@ -3,11 +3,10 @@ import React, { useState, useEffect } from "react";
 interface HeaderProps {
   onOpenBooking: () => void;
   onToggleAdmin: () => void;
-  isAdminActive: boolean;
-  onRequestDownload?: () => void;
+  isAdminActive: boolean;
 }
 
-export default function Header({ onOpenBooking, onRequestDownload }: HeaderProps) {
+export default function Header({ onOpenBooking }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

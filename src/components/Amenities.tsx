@@ -5,11 +5,10 @@ import {
 } from "lucide-react";
 
 interface AmenitiesProps {
-  onOpenBooking?: () => void;
-  onRequestDownload?: () => void;
+  onOpenBooking?: () => void;
 }
 
-export default function Amenities({ onOpenBooking, onRequestDownload }: AmenitiesProps) {
+export default function Amenities({ onOpenBooking }: AmenitiesProps) {
   const amenitiesList = [
     { icon: PartyPopper, label: "OUTDOOR\nPARTY LAWN" },
     { icon: Building, label: "CLUB HOUSE" },

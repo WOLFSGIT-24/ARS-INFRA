@@ -159,7 +159,15 @@
           font-size: 0.875rem;
         }
       }
+      /* Hide the landing-page prerender on /thank-you and other non-home paths */
+      .subpage .prerender-header,
+      .subpage .prerender-hero {
+        display: none;
+      }
     </style>
+    <script>
+      if ((location.pathname.replace(/\/+$/, '') || '/') !== '/') document.documentElement.classList.add('subpage');
+    </script>
   </head>
   <body class="bg-[#090F1D] text-[#161A22] antialiased selection:bg-[#C5A880] selection:text-white">
     <div id="root">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Download, CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import { LeadSubmission } from "../types";
 
 interface BrochureFormProps {
@@ -83,20 +83,6 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
       setLoading(false);
       setFormSubmitted(true);
     }, 1000);
-  };
-
-  const handleDownloadBrochure = () => {
-    try {
-      window.open("/Brochure.pdf", "_blank");
-      const link = document.createElement("a");
-      link.href = "/Brochure.pdf";
-      link.setAttribute("download", "Silver_Horizon_Brochure.pdf");
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (e) {
-      console.error("Error downloading brochure", e);
-    }
   };
 
   return (
@@ -228,18 +214,11 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                     Registration Confirmed
                   </h3>
                   <p className="font-body text-xs sm:text-sm text-[#4A5260] leading-relaxed">
-                    Thank you, <strong>{formData.fullName}</strong>. The ARS Svaasa catalog and layout details are ready.
+                    Thank you, <strong>{formData.fullName}</strong>. Our relationship team will be in touch shortly.
                   </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-                  <button
-                    onClick={handleDownloadBrochure}
-                    className="flex items-center justify-center gap-2 bg-[#0E172A] hover:bg-[#1E2D4A] text-[#EFE4D2] font-body text-xs font-bold tracking-widest uppercase px-6 py-3.5 rounded-xl shadow-lg transition-all cursor-pointer"
-                  >
-                    <Download className="h-4 w-4 text-[#C5A880]" />
-                    <span>DOWNLOAD BROCHURE</span>
-                  </button>
 
                   <button
                     onClick={() => setFormSubmitted(false)}
