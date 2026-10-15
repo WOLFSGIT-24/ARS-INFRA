@@ -82,8 +82,7 @@ export default function App() {
 
   const handleAddLead = (rawLead: Omit<LeadSubmission, "id" | "submittedAt" | "status">) => {
     const isoTimestamp = new Date().toISOString();
-    const localTimestamp = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
-    
+
     const newLead: LeadSubmission = {
       ...rawLead,
       id: "SH-" + Math.floor(1000 + Math.random() * 9000),
@@ -91,28 +90,26 @@ export default function App() {
       status: "Pending",
     };
 
-    // Post to Make.com Webhook if configured
-    fetch("https://hook.us1.make.com/2bmmq21zo8ocu9itedtq5oyhu5sg5zad", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        project: "ARS Svaasa",
-        developer: "ARS Infraa",
-        id: newLead.id,
-        fullName: newLead.fullName,
-        email: newLead.email,
-        phone: newLead.phone,
-        source: newLead.source,
-        notes: newLead.notes || "",
-        submittedAt: isoTimestamp,
-        localTimestamp: localTimestamp,
-        status: newLead.status,
-      }),
-    }).catch((err) => {
-      console.error("Webhook submission failed:", err);
-    });
+    // Post form fields + timestamp to the webhook configured in .env
+    const webhookUrl = import.meta.env.VITE_WEBHOOK_URL;
+    if (webhookUrl) {
+      fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: newLead.fullName,
+          email: newLead.email,
+          phone: newLead.phone,
+          timestamp: isoTimestamp,
+        }),
+      }).catch((err) => {
+        console.error("Webhook submission failed:", err);
+      });
+    } else {
+      console.warn("VITE_WEBHOOK_URL is not set; skipping webhook submission.");
+    }
 
     const updated = [newLead, ...leads];
     saveLeadsToCache(updated);
