@@ -212,7 +212,7 @@ export const locationsData: CommuteDestination[] = [
     distance: "Sarjapura Road",
     icon: "business_center",
     category: "Business",
-    times: { driving: 10, transit: 15, walking: 40 },
+    times: { driving: 25, transit: 30, walking: 90 },
   },
   {
     id: "wipro-campus",
@@ -231,12 +231,12 @@ export const locationsData: CommuteDestination[] = [
     times: { driving: 5, transit: 8, walking: 15 },
   },
   {
-    id: "manipal-hospital",
-    name: "Manipal Hospital",
+    id: "manipal-clinic",
+    name: "Manipal Clinic",
     distance: "Sarjapura Road",
     icon: "local_hospital",
     category: "Hospital",
-    times: { driving: 15, transit: 20, walking: 60 },
+    times: { driving: 10, transit: 15, walking: 40 },
   },
   {
     id: "forum-mall",
@@ -268,7 +268,7 @@ export const nearbyPointsOfInterest = {
   ],
   hospitals: [
     { name: "Swastic Hospital", dist: "Nearby" },
-    { name: "Manipal Hospital", dist: "Sarjapura Road" },
+    { name: "Manipal Clinic", dist: "Sarjapura Road" },
     { name: "Motherhood Hospital", dist: "Sarjapura Road" },
     { name: "Narayana Hrudayalaya", dist: "Nearby" },
   ],

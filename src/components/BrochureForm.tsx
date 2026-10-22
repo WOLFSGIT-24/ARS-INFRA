@@ -109,7 +109,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                   Schedule Your Private Tour
                 </h3>
                 <p className="text-xs text-gray-500 leading-relaxed font-normal">
-                  Experience the 32 storey landmark, Mediterranean architectural finesse, and 14,962 sq.ft. Pavilion Clubhouse in person.
+                  Experience the G+26 floor landmark, Mediterranean architectural finesse, and expansive Pavilion Clubhouse in person.
                 </p>
               </div>
 

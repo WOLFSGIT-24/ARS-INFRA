@@ -106,7 +106,7 @@ export default function FloorPlans({
           {/* Right Description & Action */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-gray-500 leading-relaxed font-normal">
-              Expansive 3 & 4 BHK residences and 32nd floor sky duplexes crafted with 10 foot ceiling heights, three side ventilation, and sunlit private decks.
+              Expansive 3 BHK residences and sky duplexes in a G+26 floor development, crafted with three-side ventilation and sunlit private decks.
             </p>
             <div>
               <button

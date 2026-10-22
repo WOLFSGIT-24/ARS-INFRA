@@ -5,10 +5,11 @@ import {
 } from "lucide-react";
 
 interface AmenitiesProps {
-  onOpenBooking?: () => void;
+  onOpenBooking?: () => void;
+  onRequestDownload?: () => void;
 }
 
-export default function Amenities({ onOpenBooking }: AmenitiesProps) {
+export default function Amenities({ onOpenBooking, onRequestDownload }: AmenitiesProps) {
   const amenitiesList = [
     { icon: PartyPopper, label: "OUTDOOR\nPARTY LAWN" },
     { icon: Building, label: "CLUB HOUSE" },
@@ -50,7 +51,7 @@ export default function Amenities({ onOpenBooking }: AmenitiesProps) {
           </div>
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-gray-500 leading-relaxed font-normal">
-              From the expansive 14,962 sq.ft. Pavilion Clubhouse to active sports arenas and quiet nature trails, every space is designed around daily joy, wellness, and community warmth.
+              From the expansive Pavilion Clubhouse to active sports arenas and quiet nature trails, every space is designed around daily joy, wellness, and community warmth.
             </p>
             <div>
               <button
