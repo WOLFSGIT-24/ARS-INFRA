@@ -7,11 +7,11 @@ interface MasterPlanProps {
 }
 
 const masterPlanImages = [
-  "/assets/silver_horizon/master_plan_ground.webp",
-  "/assets/silver_horizon/master_plan_first.webp",
-  "/assets/silver_horizon/master_plan_typical.webp",
-  "/assets/silver_horizon/master_plan_typical_amenities.webp",
-  "/assets/silver_horizon/master_plan_20th.webp"
+  "/master_plan_ground.webp",
+  "/master_plan_first.webp",
+  "/master_plan_typical.webp",
+  "/master_plan_typical_amenities.webp",
+  "/master_plan_20th.webp"
 ];
 
 export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanProps) {

@@ -63,7 +63,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
             className="flex items-center gap-3 group focus:outline-none z-10"
           >
             <img
-              src="/assets/silver_horizon/ARS_LOGO_Black.svg"
+              src="/ARS_LOGO_Black.svg"
               alt="ARS Zurich 1 ( Svaasa )"
               className="h-12 sm:h-16 md:h-20 w-auto object-contain filter brightness-0 invert drop-shadow-md group-hover:opacity-90 transition-opacity"
               width="160"
@@ -128,7 +128,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
           <div className="pb-3 border-b border-white/10 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <img
-                src="/assets/silver_horizon/ARS_LOGO_Black.svg"
+                src="/ARS_LOGO_Black.svg"
                 alt="ARS Zurich 1 ( Svaasa )"
                 className="h-8 w-auto object-contain filter brightness-0 invert"
               />

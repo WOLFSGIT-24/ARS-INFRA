@@ -1,8 +1,9 @@
 import React from "react";
+import { MapPin } from "lucide-react";
+import { projectSnapshot } from "../data";
 
 interface HeroProps {
   onOpenEnquiry: () => void;
-
 }
 
 export default function Hero({ onOpenEnquiry }: HeroProps) {
@@ -14,7 +15,7 @@ export default function Hero({ onOpenEnquiry }: HeroProps) {
       {/* Background Photography - Instant High-Priority LCP Render */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/assets/silver_horizon/banner.png"
+          src="/banner.png"
           alt="ARS Zurich 1 ( Svaasa ) Architectural Landmark"
           className="w-full h-full object-cover object-[center_top] sm:object-[center_top]"
           fetchPriority="high"
@@ -45,7 +46,16 @@ export default function Hero({ onOpenEnquiry }: HeroProps) {
 
           {/* Location, Specification, Price */}
           <div className="space-y-0.5 sm:space-y-1.5 text-white/95 font-body text-xs sm:text-base md:text-lg drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)] font-medium">
-            <p>Sarjapura Road, Yamare, Bengaluru</p>
+            <a
+              href={projectSnapshot.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-[#C5A880] transition-colors group cursor-pointer"
+              title="Open location in Google Maps"
+            >
+              <MapPin className="h-4 w-4 text-[#C5A880] shrink-0 group-hover:scale-110 transition-transform" />
+              <span className="hover:underline underline-offset-2">Sarjapura Road, Yamare, Bengaluru</span>
+            </a>
             <p>3 BHK Luxury Residences (1834 & 2084 SQ.FT)</p>
             <p>Price On Request</p>
           </div>

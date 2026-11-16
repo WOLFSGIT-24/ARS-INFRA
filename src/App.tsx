@@ -21,7 +21,7 @@ const PrivacyPolicyModal = lazy(() => import("./components/PrivacyPolicyModal"))
 const TermsModal = lazy(() => import("./components/TermsModal"));
 const OfferModal = lazy(() => import("./components/OfferModal"));
 
-const LOCAL_STORAGE_KEY = "silver_horizon_leads";
+const LOCAL_STORAGE_KEY = "ars_zurich_leads";
 
 function AnimatedSection({ children }: { children: React.ReactNode }) {
   return (
@@ -46,7 +46,7 @@ export default function App() {
   const [preselectedUnit, setPreselectedUnit] = useState<string | null>(null);
   const [floorPlansUnlocked, setFloorPlansUnlocked] = useState(() => {
     try {
-      return localStorage.getItem("silver_horizon_floor_plans_unlocked") === "true";
+      return localStorage.getItem("ars_zurich_floor_plans_unlocked") === "true";
     } catch {
       return false;
     }
@@ -113,7 +113,7 @@ export default function App() {
     const updated = [newLead, ...leads];
     saveLeadsToCache(updated);
     try {
-      localStorage.setItem("silver_horizon_floor_plans_unlocked", "true");
+      localStorage.setItem("ars_zurich_floor_plans_unlocked", "true");
     } catch (e) {
       console.error(e);
     }

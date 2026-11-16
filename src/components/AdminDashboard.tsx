@@ -37,7 +37,7 @@ export default function AdminDashboard({
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(leads, null, 2));
     const downloadAnchor = document.createElement("a");
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `Silver_Horizon_Inquiries_${new Date().toISOString().split("T")[0]}.json`);
+    downloadAnchor.setAttribute("download", `ARS_Zurich_Inquiries_${new Date().toISOString().split("T")[0]}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();

@@ -42,7 +42,7 @@ export default function Specifications() {
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200/80 bg-[#0E172A] aspect-[16/10] sm:aspect-[4/5] w-full">
               <img
-                src="/assets/silver_horizon/specifications_interior.webp"
+                src="/specifications_interior.webp"
                 alt="ARS Zurich 1 ( Svaasa ) Luxury Living Finishes"
                 className="w-full h-full object-cover"
                 loading="lazy"

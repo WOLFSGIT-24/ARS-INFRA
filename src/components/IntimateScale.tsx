@@ -8,15 +8,15 @@ export default function IntimateScale({ onOpenEnquiry }: IntimateScaleProps) {
   // Bottom Auto-Scrolling Building Images
   const autoScrollImages = [
     {
-      src: "/assets/silver_horizon/gallery_02.webp",
+      src: "/gallery_02.webp",
       alt: "ARS Zurich 1 ( Svaasa ) Gallery 2",
     },
     {
-      src: "/assets/silver_horizon/gallery_04.webp",
+      src: "/gallery_04.webp",
       alt: "ARS Zurich 1 ( Svaasa ) Gallery 4",
     },
     {
-      src: "/assets/silver_horizon/gallery_05.webp",
+      src: "/gallery_05.webp",
       alt: "ARS Zurich 1 ( Svaasa ) Gallery 5",
     },
   ];

@@ -25,7 +25,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 pb-10 sm:pb-16 border-b border-white/10">
           <div className="space-y-4 max-w-xl">
             <img
-              src="/assets/silver_horizon/ARS_LOGO_Black.svg"
+              src="/ARS_LOGO_Black.svg"
               alt="ARS Zurich 1 ( Svaasa )"
               className="h-12 sm:h-16 w-auto object-contain filter brightness-0 invert"
             />
@@ -53,9 +53,17 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
             <span className="text-xs uppercase font-semibold tracking-[0.2em] text-gray-400 block">
               Project Location
             </span>
-            <p className="text-sm text-white/80 leading-relaxed">
-              {projectSnapshot.address}
-            </p>
+            <a
+              href={projectSnapshot.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white/80 hover:text-white transition-colors leading-relaxed block group"
+              title="Open location in Google Maps"
+            >
+              <span className="group-hover:underline underline-offset-2">
+                {projectSnapshot.address}
+              </span>
+            </a>
             <p className="text-xs text-gray-400">
               Developed by <strong className="text-white font-medium">ARS Infraa</strong>
             </p>
@@ -105,10 +113,18 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
                 <Mail className="h-4 w-4 text-white/60 shrink-0" />
                 <span>{projectSnapshot.email}</span>
               </a>
-              <p className="flex items-start gap-2 text-white/70 text-xs pt-1">
-                <MapPin className="h-4 w-4 text-white/60 shrink-0 mt-0.5" />
-                <span>Sarjapura Road, Yamare, Bengaluru - 562125</span>
-              </p>
+              <a
+                href={projectSnapshot.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 text-white/70 hover:text-white transition-colors text-xs pt-1 group"
+                title="Open location in Google Maps"
+              >
+                <MapPin className="h-4 w-4 text-white/60 group-hover:text-[#C5A880] shrink-0 mt-0.5 transition-colors" />
+                <span className="group-hover:underline underline-offset-2">
+                  Sarjapura Road, Yamare, Bengaluru - 562125
+                </span>
+              </a>
             </div>
           </div>
 

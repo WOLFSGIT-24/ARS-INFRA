@@ -22,16 +22,16 @@ export default function FloorPlans({
   // Residence cards with exact floor plan blueprint images and brochure data
   const residenceCards = [
     {
-      unitData: { ...floorPlansData[0], title: "Typical Floor - Unit 1", imageUrl: "/assets/silver_horizon/floor_plan_typical_1.webp" },
-      image: "/assets/silver_horizon/floor_plan_typical_1.webp",
+      unitData: { ...floorPlansData[0], title: "Typical Floor - Unit 1", imageUrl: "/floor_plan_typical_1.webp" },
+      image: "/floor_plan_typical_1.webp",
       tag: "Typical Floor",
       name: "Unit 1",
       location: "Standard Layout",
       sizeBadge: "Explore",
     },
     {
-      unitData: { ...floorPlansData[1], title: "Typical Floor - Unit 2", imageUrl: "/assets/silver_horizon/floor_plan_typical_2.webp" },
-      image: "/assets/silver_horizon/floor_plan_typical_2.webp",
+      unitData: { ...floorPlansData[1], title: "Typical Floor - Unit 2", imageUrl: "/floor_plan_typical_2.webp" },
+      image: "/floor_plan_typical_2.webp",
       tag: "Typical Floor",
       name: "Unit 2",
       location: "Standard Layout",
@@ -41,13 +41,13 @@ export default function FloorPlans({
       unitData: {
         ...floorPlansData[0],
         title: "Private Terrace - Unit 1",
-        imageUrl: "/assets/silver_horizon/floor_plan_terrace_1.webp",
+        imageUrl: "/floor_plan_terrace_1.webp",
         highlights: [
           ...floorPlansData[0].highlights,
           "Private terrace garden area of 177 Sq.Ft with direct sit-out access",
         ],
       },
-      image: "/assets/silver_horizon/floor_plan_terrace_1.webp",
+      image: "/floor_plan_terrace_1.webp",
       tag: "Private Terrace",
       name: "Unit 1",
       location: "Terrace Access",

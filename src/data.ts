@@ -17,6 +17,8 @@ export const projectSnapshot = {
     "ARS Infraa is dedicated to shaping landmark residential projects that seamlessly integrate architectural excellence, superior quality craftsmanship, and modern elevated lifestyle standards. Every space is meticulously planned to redefine urban living in Bengaluru.",
   address: "#001, 3rd Floor, SyNo.55/1, Yamare, Sarjapura Road, Bengaluru, Karnataka - 562125",
   locationName: "Sarjapura Road, Yamare, Bengaluru",
+  mapUrl: "https://www.google.com/maps/place/ARS+ZURICH+PHASE+-1+(SVAASA)/data=!4m2!3m1!1s0x0:0x90544349396d225f?sa=X&ved=1t:2428&ictx=111",
+  mapEmbedUrl: "https://maps.google.com/maps?q=ARS+ZURICH+PHASE+-1+(SVAASA),+Yamare,+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed",
   phonePrimary: "+91 888 4000 765",
   phoneSecondary: "+91 888 4000 765",
   phoneRaw: "8884000765",
@@ -55,12 +57,12 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "Designed for Movement, Energy & Active Play",
     description:
       "Comprehensive sports facilities and open recreation zones encourage active, energetic lifestyles for residents of all ages.",
-    imageUrl: "/assets/silver_horizon/sport_basketball.webp",
+    imageUrl: "/sport_basketball.webp",
     images: [
-      "/assets/silver_horizon/sport_basketball.webp",
-      "/assets/silver_horizon/sport_cricket.webp",
-      "/assets/silver_horizon/sport_futsal.webp",
-      "/assets/silver_horizon/indoor_gym.webp",
+      "/sport_basketball.webp",
+      "/sport_cricket.webp",
+      "/sport_futsal.webp",
+      "/indoor_gym.webp",
     ],
     bullets: [
       "Mini Football Ground",
@@ -79,10 +81,10 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "Relax, Unwind and Rejuvenate",
     description:
       "Relaxation and nature blend harmoniously with landscaped gardens, swimming pool, and quiet meditation zones.",
-    imageUrl: "/assets/silver_horizon/indoor_pool.webp",
+    imageUrl: "/indoor_pool.webp",
     images: [
-      "/assets/silver_horizon/indoor_pool.webp",
-      "/assets/silver_horizon/wellness_pool.webp",
+      "/indoor_pool.webp",
+      "/wellness_pool.webp",
     ],
     bullets: [
       "Swimming Pool with Dedicated Kids Pool",
@@ -99,10 +101,10 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "Where Neighbors Become Family",
     description:
       "Thoughtfully designed social spaces foster meaningful community connections and celebratory gatherings.",
-    imageUrl: "/assets/silver_horizon/pavilion_amphitheatre.webp",
+    imageUrl: "/pavilion_amphitheatre.webp",
     images: [
-      "/assets/silver_horizon/pavilion_amphitheatre.webp",
-      "/assets/silver_horizon/kids_play_area.webp",
+      "/pavilion_amphitheatre.webp",
+      "/kids_play_area.webp",
     ],
     bullets: [
       "Open-Air Amphitheater",
@@ -118,9 +120,9 @@ export const amenitiesData: AmenityItem[] = [
     tagline: "Reliable, Sustainable and Secure",
     description:
       "Modern infrastructure and round-the-clock safety systems provide total peace of mind for every family.",
-    imageUrl: "/assets/silver_horizon/ev_charging.webp",
+    imageUrl: "/ev_charging.webp",
     images: [
-      "/assets/silver_horizon/ev_charging.webp",
+      "/ev_charging.webp",
     ],
     bullets: [
       "24/7 Security with CCTV Surveillance & Security Room",
@@ -142,7 +144,7 @@ export const floorPlansData: FloorPlanUnit[] = [
     facing: "East Facing",
     sbua: "2084 Sft",
     carpetArea: "1537 Sft",
-    imageUrl: "/assets/silver_horizon/unit_plan_01.webp",
+    imageUrl: "/unit_plan_01.webp",
     bedrooms: 3,
     bathrooms: 3,
     balconies: 2,
@@ -163,7 +165,7 @@ export const floorPlansData: FloorPlanUnit[] = [
     facing: "North Facing",
     sbua: "1834 Sft",
     carpetArea: "1352 Sft",
-    imageUrl: "/assets/silver_horizon/unit_plan_02.webp",
+    imageUrl: "/unit_plan_02.webp",
     bedrooms: 3,
     bathrooms: 3,
     balconies: 2,
@@ -284,13 +286,13 @@ export const nearbyPointsOfInterest = {
       title: "Sarjapura Road Arterial Highway",
       desc: "Direct connectivity to major tech hubs including RGA Tech Park, Wipro New Campus, and Outer Ring Road.",
       badge: "Prime Location",
-      img: "/assets/silver_horizon/prr_expressway.webp",
+      img: "/prr_expressway.webp",
     },
     {
       title: "Carmelaram Railway Station & Transit",
       desc: "Easy access to suburban rail and public transit networks for seamless cross-city commuting.",
       badge: "Transit Hub",
-      img: "/assets/silver_horizon/metro_train.webp",
+      img: "/metro_train.webp",
     },
   ],
 };
@@ -377,12 +379,12 @@ export const trackRecordData: TrackRecordProject[] = [
     title: "ARS ZURICH 1 ( SVAASA )",
     type: "3 BHK Luxury Residences",
     location: "Sarjapura Road, Yamare, Bengaluru",
-    imageUrl: "/assets/silver_horizon/tower_day_view.webp",
+    imageUrl: "/tower_day_view.webp",
   },
   {
     title: "BHAVISHA HOMES",
     type: "Premium Residential Projects",
     location: "Bengaluru, Karnataka",
-    imageUrl: "/assets/silver_horizon/track_casero.webp",
+    imageUrl: "/track_casero.webp",
   },
 ];

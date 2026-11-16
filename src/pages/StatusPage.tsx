@@ -16,7 +16,7 @@ export default function StatusPage({ title, eyebrow, heading, children }: Status
       <meta name="robots" content="noindex, nofollow" />
 
       <img
-        src="/assets/silver_horizon/cta.webp"
+        src="/cta.webp"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover object-[30%_top] opacity-35"
@@ -27,7 +27,7 @@ export default function StatusPage({ title, eyebrow, heading, children }: Status
       <header className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
         <a href="/" aria-label="ARS Zurich 1 ( Svaasa ) home">
           <img
-            src="/assets/silver_horizon/ARS_LOGO_Black.svg"
+            src="/ARS_LOGO_Black.svg"
             alt="ARS Zurich 1 ( Svaasa )"
             className="h-12 sm:h-16 w-auto object-contain filter brightness-0 invert"
             width="160"

@@ -3,52 +3,52 @@ import { ZoomIn, X } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/assets/silver_horizon/balcony_sunset_panorama.webp",
+    src: "/balcony_sunset_panorama.webp",
     title: "Sunset Sky Balcony",
     category: "Skyline Living",
   },
   {
-    src: "/assets/silver_horizon/grand_lobby.webp",
+    src: "/grand_lobby.webp",
     title: "The Grand Arrival Lobby",
     category: "Arrival Experience",
   },
   {
-    src: "/assets/silver_horizon/living_room_skyline.webp",
+    src: "/living_room_skyline.webp",
     title: "10 Ft High Living Room",
     category: "Residences",
   },
   {
-    src: "/assets/silver_horizon/master_bedroom.webp",
+    src: "/master_bedroom.webp",
     title: "Crafted Master Bedroom",
     category: "Interiors",
   },
   {
-    src: "/assets/silver_horizon/pavilion_amphitheatre.webp",
+    src: "/pavilion_amphitheatre.webp",
     title: "Open Air Pavilion Amphitheatre",
     category: "Community",
   },
   {
-    src: "/assets/silver_horizon/indoor_pool.webp",
+    src: "/indoor_pool.webp",
     title: "Indoor Heated Pool with Deck",
     category: "Clubhouse",
   },
   {
-    src: "/assets/silver_horizon/wellness_pool.webp",
+    src: "/wellness_pool.webp",
     title: "Wellness Pool & Sunken Loungers",
     category: "Wellness",
   },
   {
-    src: "/assets/silver_horizon/kids_play_area.webp",
+    src: "/kids_play_area.webp",
     title: "Children's Adventure Play Area",
     category: "Kids Zone",
   },
   {
-    src: "/assets/silver_horizon/night_tower_landmark.webp",
+    src: "/night_tower_landmark.webp",
     title: "Night Architectural Illumination",
     category: "Landmark Elevation",
   },
   {
-    src: "/assets/silver_horizon/gallery_05.webp",
+    src: "/gallery_05.webp",
     title: "Architectural Elevation",
     category: "Landmark Elevation",
   },
