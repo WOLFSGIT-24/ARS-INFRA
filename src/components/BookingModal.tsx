@@ -212,10 +212,16 @@ export default function BookingModal({
               </div>
 
               <button
-                onClick={onClose}
-                className="w-full bg-[#0E172A] hover:bg-[#1E2D4A] text-[#EFE4D2] font-body text-xs font-bold tracking-widest uppercase py-3.5 rounded-sm shadow-md transition-all cursor-pointer"
+                onClick={() => {
+                  onClose();
+                  const el = document.getElementById("floor-plans");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="w-full bg-[#B36B4C] hover:bg-[#8F563D] text-white font-body text-xs sm:text-sm font-semibold tracking-wide py-3.5 rounded-full shadow-md transition-all cursor-pointer"
               >
-                VIEW LAYOUTS
+                VIEW FLOOR PLANS
               </button>
             </div>
           )}

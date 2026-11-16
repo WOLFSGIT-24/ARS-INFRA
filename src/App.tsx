@@ -44,9 +44,14 @@ export default function App() {
   const [termsOpen, setTermsOpen] = useState(false);
   const [offerOpen, setOfferOpen] = useState(false);
   const [preselectedUnit, setPreselectedUnit] = useState<string | null>(null);
+  const STORAGE_KEY_FLOOR_PLANS = "ars_zurich_floor_plans_unlocked_v1";
+
   const [floorPlansUnlocked, setFloorPlansUnlocked] = useState(() => {
     try {
-      return localStorage.getItem("ars_zurich_floor_plans_unlocked") === "true";
+      return (
+        sessionStorage.getItem(STORAGE_KEY_FLOOR_PLANS) === "true" ||
+        localStorage.getItem(STORAGE_KEY_FLOOR_PLANS) === "true"
+      );
     } catch {
       return false;
     }
@@ -113,13 +118,17 @@ export default function App() {
     const updated = [newLead, ...leads];
     saveLeadsToCache(updated);
     try {
-      localStorage.setItem("ars_zurich_floor_plans_unlocked", "true");
+      localStorage.setItem(STORAGE_KEY_FLOOR_PLANS, "true");
+      sessionStorage.setItem(STORAGE_KEY_FLOOR_PLANS, "true");
     } catch (e) {
       console.error(e);
     }
     setFloorPlansUnlocked(true);
 
-    window.location.assign("/thank-you");
+    // Keep users on the page when they fill popup modals so they immediately view the unlocked floor plans
+    if (rawLead.source === "brochure_download") {
+      window.location.assign("/thank-you");
+    }
   };
 
   const handleUpdateStatus = (id: string, status: LeadSubmission["status"]) => {
