@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowLeft, ArrowRight, MapPin, ZoomIn, Lock, X, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, ZoomIn, Lock, X } from "lucide-react";
 import { floorPlansData } from "../data";
 import { FloorPlanUnit } from "../types";
 
@@ -150,39 +150,6 @@ export default function FloorPlans({
 
         </div>
 
-        {/* Lock / Unlock Status Banner */}
-        {!isUnlocked ? (
-          <div className="mb-8 p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-amber-200/80 flex items-center justify-between gap-4 flex-wrap shadow-xs">
-            <div className="flex items-center gap-3.5">
-              <div className="w-10 h-10 rounded-full bg-[#B36B4C]/15 flex items-center justify-center text-[#B36B4C] shrink-0 shadow-xs">
-                <Lock className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-xs sm:text-sm font-semibold text-[#161A22]">
-                  Blueprints & Detailed Layouts are Locked
-                </p>
-                <p className="text-[11px] sm:text-xs text-gray-600 mt-0.5">
-                  Fill our brief enquiry popup form to instantly unlock clear, high-resolution floor plans and room dimensions.
-                </p>
-              </div>
-            </div>
-            <button
-              onClick={onUnlockRequest}
-              className="bg-[#B36B4C] hover:bg-[#8F563D] text-white text-xs font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-1.5"
-            >
-              <Lock className="w-3.5 h-3.5" />
-              <span>Unlock Now</span>
-            </button>
-          </div>
-        ) : (
-          <div className="mb-8 p-3.5 sm:p-4 rounded-2xl bg-emerald-50/90 border border-emerald-200/80 flex items-center gap-3 shadow-xs">
-            <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
-            <p className="text-xs sm:text-sm font-medium text-emerald-900">
-              Floor plans unlocked. Click any layout to zoom in and review room dimensions and architectural inclusions.
-            </p>
-          </div>
-        )}
-
         {/* Sliding Portrait Cards Track matching screenshot */}
         <div className="relative overflow-hidden pb-4">
           <div
@@ -198,16 +165,11 @@ export default function FloorPlans({
                 className="w-[85vw] sm:w-[44vw] lg:w-[calc(33.333%-16px)] shrink-0 aspect-[4/5] sm:aspect-[3/4] relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer group bg-white border border-gray-200/80 flex flex-col justify-between p-4 sm:p-5 select-none"
               >
                 {/* Top Badges Row */}
-                <div className="relative z-10 flex items-center justify-between">
-                  {!isUnlocked ? (
+                <div className={`relative z-10 flex items-center ${!isUnlocked ? "justify-between" : "justify-end"}`}>
+                  {!isUnlocked && (
                     <span className="bg-[#B36B4C] text-white text-[10px] sm:text-[11px] font-semibold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
                       <Lock className="w-3 h-3" />
                       <span>Locked</span>
-                    </span>
-                  ) : (
-                    <span className="bg-emerald-600 text-white text-[10px] sm:text-[11px] font-semibold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                      <span>Unlocked</span>
                     </span>
                   )}
                   <span className="bg-[#0E172A] text-white text-[11px] sm:text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-sm">
