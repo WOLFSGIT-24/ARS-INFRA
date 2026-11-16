@@ -60,15 +60,23 @@ export default function Header({ onOpenBooking }: HeaderProps) {
           <a
             href="#overview"
             onClick={(e) => handleLinkClick(e, "overview")}
-            className="flex items-center gap-2 group focus:outline-none z-10"
+            className="flex items-center gap-3 group focus:outline-none z-10"
           >
             <img
               src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-              alt="ARS Svaasa Logo"
+              alt="ARS Zurich 1 ( Svaasa )"
               className="h-12 sm:h-16 md:h-20 w-auto object-contain filter brightness-0 invert drop-shadow-md group-hover:opacity-90 transition-opacity"
               width="160"
               height="64"
             />
+            <div className="hidden sm:flex flex-col text-left border-l border-white/20 pl-3">
+              <span className="font-display text-sm md:text-base font-semibold text-white tracking-wide leading-tight">
+                ARS Zurich 1
+              </span>
+              <span className="text-[10px] md:text-xs text-[#C5A880] tracking-wider uppercase font-medium">
+                ( Svaasa )
+              </span>
+            </div>
           </a>
 
           {/* Center Navigation Links matching the reference structure */}
@@ -118,11 +126,16 @@ export default function Header({ onOpenBooking }: HeaderProps) {
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-20 bg-[#090F1D]/98 backdrop-blur-xl z-40 lg:hidden flex flex-col p-6 sm:p-8 space-y-4 animate-fade-in border-t border-white/10 overflow-y-auto">
           <div className="pb-3 border-b border-white/10 flex items-center justify-between">
-            <img
-              src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-              alt="ARS Svaasa Logo"
-              className="h-8 w-auto object-contain filter brightness-0 invert"
-            />
+            <div className="flex items-center gap-2">
+              <img
+                src="/assets/silver_horizon/ARS_LOGO_Black.svg"
+                alt="ARS Zurich 1 ( Svaasa )"
+                className="h-8 w-auto object-contain filter brightness-0 invert"
+              />
+              <span className="font-display text-xs font-semibold text-white">
+                ARS Zurich 1 ( Svaasa )
+              </span>
+            </div>
             <span className="text-[11px] uppercase tracking-widest text-[#C5A880] font-semibold">
               3 BHK Luxury
             </span>

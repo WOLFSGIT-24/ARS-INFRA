@@ -55,10 +55,10 @@ export default function AdminDashboard({
             </div>
             <div>
               <h3 className="font-display text-lg sm:text-xl font-bold tracking-tight">
-                ARS Infraa — Sales Console
+                ARS Zurich 1 ( Svaasa ) — Sales Console
               </h3>
               <p className="text-[10px] text-[#EFE4D2] uppercase tracking-widest font-bold">
-                ARS Svaasa Lead Pipeline & Walkthrough Appointments
+                ARS Zurich 1 ( Svaasa ) Lead Pipeline & Walkthrough Appointments
               </p>
             </div>
           </div>
@@ -234,7 +234,7 @@ export default function AdminDashboard({
         </div>
 
         <div className="bg-[#FAF8F5] p-3 text-center text-xs text-[#4A5260] font-body border-t border-[#E5DED3]">
-          ARS Infraa Lead Tracking Console. Connected with live form submissions.
+          ARS Zurich 1 ( Svaasa ) Lead Tracking Console. Connected with live form submissions.
         </div>
 
       </div>

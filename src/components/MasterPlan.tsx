@@ -45,7 +45,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           {/* Right Description & Action */}
           <div className="lg:col-span-6 space-y-4">
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
-              The ARS Svaasa masterplan offers a spacious and efficient layout, featuring well ventilated 1834 and 2084 sq. ft. units. Wide corridors, a dedicated fire lobby, and 3 high-speed lifts ensure easy access and safety, creating a perfect blend of luxury and practicality.
+              The ARS Zurich 1 ( Svaasa ) masterplan offers a spacious and efficient layout, featuring well ventilated 1834 and 2084 sq. ft. units. Wide corridors, a dedicated fire lobby, and 3 high-speed lifts ensure easy access and safety, creating a perfect blend of luxury and practicality.
             </p>
             <div>
               <button
@@ -70,7 +70,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
           >
             <img
               src={masterPlanImages[currentIndex]}
-              alt={`ARS Svaasa Master Plan ${currentIndex + 1}`}
+              alt={`ARS Zurich 1 ( Svaasa ) Master Plan ${currentIndex + 1}`}
               loading="lazy"
               className="w-full h-full object-contain p-2 sm:p-6 transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
@@ -127,7 +127,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             </div>
             <div className="bg-[#2C5E3B] text-white p-3.5 rounded-xl shadow-sm border border-[#1F472B]">
               <span className="text-[11px] text-[#A3C9A6] uppercase tracking-wider block font-medium">Lifts</span>
-              <span className="text-base sm:text-lg font-bold">3 (Schindler 8 Pax)</span>
+              <span className="text-base sm:text-lg font-bold">3 Lifts</span>
             </div>
           </div>
 
@@ -148,7 +148,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <div className="flex justify-between items-center pb-4 border-b border-gray-100">
               <div>
                 <h3 className="text-xl sm:text-2xl font-normal text-[#161A22] tracking-tight">
-                  ARS Svaasa: Site Master Plan & Parking Plan
+                  ARS Zurich 1 ( Svaasa ): Site Master Plan & Parking Plan
                 </h3>
                 <p className="text-xs text-gray-500">
                   B+G+26 Floors • 104 Flats • 1834 & 2084 Sq.Ft Units • Basement Parking
@@ -166,7 +166,7 @@ export default function MasterPlan({ onSelectUnit, onOpenBooking }: MasterPlanPr
             <div className="relative overflow-auto flex-1 my-4 flex items-center justify-center bg-[#FAF8F5] p-2 sm:p-6 rounded-xl border border-gray-100 group">
               <img
                 src={masterPlanImages[currentIndex]}
-                alt={`ARS Svaasa Full Master Plan ${currentIndex + 1}`}
+                alt={`ARS Zurich 1 ( Svaasa ) Full Master Plan ${currentIndex + 1}`}
                 className="max-w-full max-h-[70vh] object-contain"
               />
               

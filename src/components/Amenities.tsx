@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { 
   PartyPopper, Building, TreePine, Dumbbell, Waves, Gamepad2, 
-  ArrowLeft, ArrowRight, Trophy, Ticket, Dog, Flower2, Circle, Smile 
+  ArrowLeft, ArrowRight, Trophy, Ticket, Flower2, Circle, Smile 
 } from "lucide-react";
 
 interface AmenitiesProps {
@@ -19,7 +19,6 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
     { icon: Gamepad2, label: "INDOOR GAME\nROOM" },
     { icon: Trophy, label: "MINI FOOTBALL\nGROUND" },
     { icon: Ticket, label: "AMPHITHEATER" },
-    { icon: Dog, label: "PET PARK" },
     { icon: Flower2, label: "YOGA &\nMEDITATION HALL" },
     { icon: Circle, label: "BASKETBALL\nCOURT" },
     { icon: Smile, label: "CHILDREN\nPLAY AREA" },
@@ -46,7 +45,7 @@ export default function Amenities({ onOpenBooking, onRequestDownload }: Amenitie
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-16 sm:mb-20">
           <div className="lg:col-span-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-[#161A22] leading-[1.15]">
-              35+ thoughtfully curated amenities
+              30+ thoughtfully curated amenities
             </h2>
           </div>
           <div className="lg:col-span-6 space-y-5">

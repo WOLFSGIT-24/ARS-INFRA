@@ -188,7 +188,7 @@ onOpenEnquiry={handleHeroEnquiry}
 />
         </AnimatedSection>
 
-        {/* Interactive Floor Drafting Plans (Units 01-07, 4 BHK Duplex) */}
+        {/* Interactive Floor Drafting Plans (3 BHK Luxury Residences) */}
         <AnimatedSection>
           <FloorPlans 
             onSelectUnit={handleSelectUnitType} 
@@ -245,7 +245,7 @@ onOpenEnquiry={handleHeroEnquiry}
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/918884000765?text=Hi%2C%20I%20am%20interested%20in%20ARS%20Svaasa%20by%20ARS%20Infraa.%20Please%20share%20details."
+        href="https://wa.me/918884000765?text=Hi%2C%20I%20am%20interested%20in%20ARS%20Zurich%201%20(%20Svaasa%20)%20by%20ARS%20Infraa.%20Please%20share%20details."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-[76px] md:bottom-8 right-4 md:right-8 bg-[#25D366] text-white p-3.5 md:p-4 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_8px_30px_rgba(37,211,102,0.6)] hover:scale-110 transition-all z-40 flex items-center justify-center animate-fade-in"

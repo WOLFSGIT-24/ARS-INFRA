@@ -90,7 +90,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
       {/* Full-bleed Background Image with tower clearly visible on the left */}
       <img
         src="/assets/silver_horizon/cta.png"
-        alt="ARS Svaasa Luxury Architecture"
+        alt="ARS Zurich 1 ( Svaasa ) Luxury Architecture"
         className="absolute inset-0 w-full h-full object-cover object-[20%_top] sm:object-[25%_top] lg:object-[35%_top]"
         loading="lazy"
         decoding="async"
@@ -199,7 +199,7 @@ export default function BrochureForm({ onAddLead, preselectedUnit }: BrochureFor
                 </div>
 
                 <p className="text-center text-[10px] text-[#4A5260] font-body pt-0.5">
-                  Verified SSL Encryption • Direct from ARS Infraa
+                  Verified SSL Encryption • Direct from ARS Zurich 1 ( Svaasa )
                 </p>
               </form>
             </>

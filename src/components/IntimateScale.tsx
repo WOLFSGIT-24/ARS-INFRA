@@ -9,15 +9,15 @@ export default function IntimateScale({ onOpenEnquiry }: IntimateScaleProps) {
   const autoScrollImages = [
     {
       src: "/assets/silver_horizon/gallery_02.webp",
-      alt: "ARS Svaasa Gallery 2",
+      alt: "ARS Zurich 1 ( Svaasa ) Gallery 2",
     },
     {
       src: "/assets/silver_horizon/gallery_04.webp",
-      alt: "ARS Svaasa Gallery 4",
+      alt: "ARS Zurich 1 ( Svaasa ) Gallery 4",
     },
     {
       src: "/assets/silver_horizon/gallery_05.webp",
-      alt: "ARS Svaasa Gallery 5",
+      alt: "ARS Zurich 1 ( Svaasa ) Gallery 5",
     },
   ];
 
@@ -33,15 +33,15 @@ export default function IntimateScale({ onOpenEnquiry }: IntimateScaleProps) {
             <span className="text-xs font-semibold tracking-[0.2em] text-[#C5A880] uppercase block mb-2">
               Elegant Heights
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-[#161A22] leading-[1.15] capitalize">
-              The Architectural Beauty of ARS Svaasa
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight text-[#161A22] leading-[1.15]">
+              The Architectural Beauty of ARS Zurich 1 ( Svaasa )
             </h2>
           </div>
 
           {/* Right Description & CTA */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
-              The elevation of ARS Svaasa combines modern elegance with impressive height, featuring sleek lines and uniform balconies that draw the eye upward. Its warm-toned facade blends harmoniously with the surroundings, creating a refined, luxurious presence that redefines urban living.
+              The elevation of ARS Zurich 1 ( Svaasa ) combines modern elegance with impressive height, featuring sleek lines and uniform balconies that draw the eye upward. Its warm-toned facade blends harmoniously with the surroundings, creating a refined, luxurious presence that redefines urban living.
             </p>
             <div>
               <button

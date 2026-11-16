@@ -15,7 +15,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           <div className="w-full md:w-1/2 flex flex-col justify-start pb-0 md:pb-20 lg:pb-28">
             <img
               src="/assets/silver_horizon/second-sec.png"
-              alt="ARS Svaasa View 1"
+              alt="ARS Zurich 1 ( Svaasa ) View 1"
               className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500"
               loading="lazy"
             />
@@ -25,7 +25,7 @@ export default function ProjectHighlights({ onRequestDownload, onOpenBooking }: 
           <div className="w-full md:w-1/2 flex flex-col justify-end pt-0 md:pt-24 lg:pt-32">
             <img
               src="/assets/silver_horizon/second-sec2.png"
-              alt="ARS Svaasa View 2"
+              alt="ARS Zurich 1 ( Svaasa ) View 2"
               className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500"
               loading="lazy"
             />

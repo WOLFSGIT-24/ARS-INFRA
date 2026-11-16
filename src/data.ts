@@ -9,7 +9,7 @@ import {
 } from "./types";
 
 export const projectSnapshot = {
-  name: "ARS Svaasa",
+  name: "ARS Zurich 1 ( Svaasa )",
   tagline: "Luxury Living, Elevated",
   developer: "ARS Infraa",
   developerFull: "ARS Infraa Pvt. Ltd.",
@@ -28,20 +28,20 @@ export const projectSnapshot = {
   openSpace: "Lush Landscaped Open Space",
   ceilingHeight: "Spacious & Well-Ventilated Layouts",
   clubhouseArea: "Modern Amenities & Recreation",
-  amenitiesCount: "22+ Curated Amenities",
+  amenitiesCount: "30+ Curated Amenities",
   parking: "Basement Parking Structure",
   unitGap: "Wide Corridors & Dedicated Fire Lobby",
   configuration: "3 BHK Luxury Residences (1834 & 2084 SQFT)",
   sizes: "3 BHK: 1834 & 2084 SQFT (Carpet Area: 1352 & 1537 SQFT)",
-  lifts: "3 High-Speed Lifts (Schindler 8 Pax Capacity)",
+  lifts: "3 High-Speed Lifts",
 };
 
 export const keyHighlights = [
-  { value: "B+G+26", label: "Storey Landmark", sub: "Architectural Beauty of ARS Svaasa" },
+  { value: "B+G+26", label: "Storey Landmark", sub: "Architectural Beauty of ARS Zurich 1 ( Svaasa )" },
   { value: "104", label: "Flats", sub: "Exclusive High-Rise Community" },
   { value: "1834 & 2084", label: "SQFT Units", sub: "Spacious 3 BHK Floor Plans" },
-  { value: "3", label: "Schindler Lifts", sub: "8 Passenger Capacity Each" },
-  { value: "22+", label: "Curated Amenities", sub: "Sports, Leisure & Wellness" },
+  { value: "3", label: "Lifts", sub: "High-Speed Access" },
+  { value: "30+", label: "Curated Amenities", sub: "Sports, Leisure & Wellness" },
   { value: "Basement", label: "Dedicated Parking", sub: "Safe & Ample Parking Slots" },
   { value: "Sarjapura Rd", label: "Prime Location", sub: "Yamare, Bengaluru" },
   { value: "100%", label: "Power Backup", sub: "Generator with Load Controller" },
@@ -83,13 +83,11 @@ export const amenitiesData: AmenityItem[] = [
     images: [
       "/assets/silver_horizon/indoor_pool.webp",
       "/assets/silver_horizon/wellness_pool.webp",
-      "/assets/silver_horizon/pet_park.webp",
     ],
     bullets: [
       "Swimming Pool with Dedicated Kids Pool",
       "Senior Citizen Park & Seating Pavilions",
       "Landscaped Garden Area & Mini Forest",
-      "Dedicated Pets Park",
       "Yoga / Meditation Hall",
       "Indoor Games Room",
     ],
@@ -129,7 +127,7 @@ export const amenitiesData: AmenityItem[] = [
       "24/7 Power Backup Generator with Load Controller",
       "STP (Sewage Treatment Plant) for Recycled Water",
       "Dedicated Transformer Yard & Seismic Zone-II BIS Compliance",
-      "3 High-Speed Lifts (Schindler 8 Passengers Capacity)",
+      "3 High-Speed Lifts",
       "Basement Parking Structure",
     ],
   },
@@ -154,7 +152,7 @@ export const floorPlansData: FloorPlanUnit[] = [
       "Master Bedroom (12'0\" x 14'5\") with attached dress room (8'6\" x 8'6\") and private toilet",
       "Modern Kitchen (9'4\" x 9'10\") with attached Utility area (7'5\" x 4'7\")",
       "Two additional bedrooms (12'0\" x 13'11\" & 11'6\" x 13'11\") with attached balconies",
-      "Wide corridors, dedicated fire lobby, and 3 Schindler lifts access",
+      "Wide corridors, dedicated fire lobby, and 3 lifts access",
     ],
   },
   {
@@ -189,7 +187,6 @@ export const masterPlanLegends: MasterPlanPoint[] = [
   { id: 6, name: "Senior Citizen Park", category: "Nature & Landscape" },
   { id: 7, name: "Skating Rink", category: "Sports & Wellness" },
   { id: 8, name: "Swimming Pool & Kids Pool", category: "Sports & Wellness" },
-  { id: 9, name: "Pet Park", category: "Family & Kids" },
   { id: 10, name: "Landscape Garden Area", category: "Nature & Landscape" },
   { id: 11, name: "Sand Pit & Rock Climbing", category: "Family & Kids" },
   { id: 12, name: "Security Room", category: "Entrance & Arrival" },
@@ -347,7 +344,7 @@ export const specificationsData: SpecificationCategory[] = [
     title: "Lifts & Safety",
     icon: "elevator",
     items: [
-      "Lift with a capacity of 8 passengers of Schindler make (3 Lifts).",
+      "3 High-Speed Lifts.",
       "Security room portal with 24/7 CCTV surveillance.",
       "Integrated STP (Sewage Treatment Plant) & Transformer Yard.",
     ],
@@ -377,7 +374,7 @@ export const consultantsData: ConsultantItem[] = [
 
 export const trackRecordData: TrackRecordProject[] = [
   {
-    title: "ARS SVAASA",
+    title: "ARS ZURICH 1 ( SVAASA )",
     type: "3 BHK Luxury Residences",
     location: "Sarjapura Road, Yamare, Bengaluru",
     imageUrl: "/assets/silver_horizon/tower_day_view.webp",

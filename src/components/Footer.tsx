@@ -26,7 +26,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           <div className="space-y-4 max-w-xl">
             <img
               src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-              alt="ARS Svaasa"
+              alt="ARS Zurich 1 ( Svaasa )"
               className="h-12 sm:h-16 w-auto object-contain filter brightness-0 invert"
             />
             <p className="text-xl sm:text-2xl md:text-3xl font-normal text-white/90 tracking-tight leading-snug">
@@ -123,7 +123,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps = {})
           </div>
 
           <div className="flex flex-wrap items-center gap-3 text-xs text-white/60">
-            <span>© {new Date().getFullYear()} ARS Infraa</span>
+            <span>© {new Date().getFullYear()} ARS Zurich 1 ( Svaasa )</span>
             <span>•</span>
             <button
               onClick={onOpenPrivacy}

@@ -123,10 +123,10 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
           <form onSubmit={handleSubmit} className="flex flex-col overflow-y-auto">
             <div className="p-5 sm:p-7 pb-4 bg-[#0E172A] text-white border-b border-white/10 shrink-0">
               <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C5A880]">
-                ARS Infraa
+                ARS Zurich 1 ( Svaasa )
               </span>
               <h3 className="font-display text-lg sm:text-xl font-bold text-white mt-0.5">
-                Experience ARS Svaasa
+                Experience ARS Zurich 1 ( Svaasa )
               </h3>
               <p className="font-body text-xs text-white/70 mt-1 leading-relaxed">
                 Connect directly with our relationship manager for floor plans, custom pricing, and private site walkthroughs.
@@ -213,7 +213,7 @@ export default function OfferModal({ isOpen, onClose, onAddLead }: OfferModalPro
             </div>
             <h3 className="font-display text-2xl font-bold text-[#0E172A]">Request Received</h3>
             <p className="font-body text-xs text-[#4A5260] leading-relaxed max-w-xs">
-              Thank you! Our relationship team from ARS Infraa has received your inquiry and will contact you promptly.
+              Thank you! Our relationship team from ARS Zurich 1 ( Svaasa ) has received your inquiry and will contact you promptly.
             </p>
           </div>
         )}

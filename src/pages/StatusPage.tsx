@@ -25,10 +25,10 @@ export default function StatusPage({ title, eyebrow, heading, children }: Status
       <div className="absolute inset-0 bg-gradient-to-b from-[#090F1D]/70 via-[#090F1D]/80 to-[#090F1D] pointer-events-none" />
 
       <header className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
-        <a href="/" aria-label="ARS Svaasa home">
+        <a href="/" aria-label="ARS Zurich 1 ( Svaasa ) home">
           <img
             src="/assets/silver_horizon/ARS_LOGO_Black.svg"
-            alt="ARS Svaasa"
+            alt="ARS Zurich 1 ( Svaasa )"
             className="h-12 sm:h-16 w-auto object-contain filter brightness-0 invert"
             width="160"
             height="64"

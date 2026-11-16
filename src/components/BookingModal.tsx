@@ -96,7 +96,7 @@ export default function BookingModal({
             </div>
             <div>
               <h3 className="font-display text-base sm:text-lg font-bold tracking-tight">
-                Unlock ARS Svaasa Layouts
+                Unlock ARS Zurich 1 ( Svaasa ) Layouts
               </h3>
               <p className="text-[10px] text-[#EFE4D2] uppercase tracking-widest font-bold">
                 Enter your details to view full blueprints
@@ -207,7 +207,7 @@ export default function BookingModal({
                   Floor Plans Unlocked
                 </h4>
                 <p className="font-body text-xs text-[#4A5260] mt-1.5 max-w-sm mx-auto">
-                  Thank you, <strong>{formData.fullName}</strong>. You now have full access to explore the ARS Svaasa floor plans.
+                  Thank you, <strong>{formData.fullName}</strong>. You now have full access to explore the ARS Zurich 1 ( Svaasa ) floor plans.
                 </p>
               </div>
 

@@ -1,7 +1,8 @@
 import React from "react";
 
 interface HeroProps {
-  onOpenEnquiry: () => void;
+  onOpenEnquiry: () => void;
+
 }
 
 export default function Hero({ onOpenEnquiry }: HeroProps) {
@@ -14,7 +15,7 @@ export default function Hero({ onOpenEnquiry }: HeroProps) {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src="/assets/silver_horizon/banner.png"
-          alt="ARS Svaasa Architectural Landmark"
+          alt="ARS Zurich 1 ( Svaasa ) Architectural Landmark"
           className="w-full h-full object-cover object-[center_top] sm:object-[center_top]"
           fetchPriority="high"
           loading="eager"
@@ -36,9 +37,9 @@ export default function Hero({ onOpenEnquiry }: HeroProps) {
           
           {/* Large Headline */}
           <h1 
-            className="font-display text-2xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.15] drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] capitalize"
+            className="font-display text-2xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.15] drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
           >
-            Welcome to Svaasa <br className="hidden sm:inline" />
+            Welcome to <br/> ARS Zurich 1 ( Svaasa ) <br className="hidden sm:inline" />
             Luxury Living, Elevated
           </h1>
 

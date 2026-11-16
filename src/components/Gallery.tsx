@@ -18,11 +18,6 @@ const galleryImages = [
     category: "Residences",
   },
   {
-    src: "/assets/silver_horizon/duplex_staircase.webp",
-    title: "Duplex Spiral Staircase",
-    category: "32nd Floor Duplex",
-  },
-  {
     src: "/assets/silver_horizon/master_bedroom.webp",
     title: "Crafted Master Bedroom",
     category: "Interiors",
@@ -41,11 +36,6 @@ const galleryImages = [
     src: "/assets/silver_horizon/wellness_pool.webp",
     title: "Wellness Pool & Sunken Loungers",
     category: "Wellness",
-  },
-  {
-    src: "/assets/silver_horizon/pet_park.webp",
-    title: "Dedicated Pet Park",
-    category: "Outdoor Spaces",
   },
   {
     src: "/assets/silver_horizon/kids_play_area.webp",

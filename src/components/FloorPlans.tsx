@@ -38,34 +38,18 @@ export default function FloorPlans({
       sizeBadge: "Explore",
     },
     {
-      unitData: { ...floorPlansData[0], title: "Typical Floor - Unit 4", imageUrl: "/assets/silver_horizon/floor_plan_typical_4.webp" },
-      image: "/assets/silver_horizon/floor_plan_typical_4.webp",
-      tag: "Typical Floor",
-      name: "Unit 4",
-      location: "Standard Layout",
-      sizeBadge: "Explore",
-    },
-    {
-      unitData: { ...floorPlansData[1], title: "Private Terrace - Unit 1", imageUrl: "/assets/silver_horizon/floor_plan_terrace_1.webp" },
+      unitData: {
+        ...floorPlansData[0],
+        title: "Private Terrace - Unit 1",
+        imageUrl: "/assets/silver_horizon/floor_plan_terrace_1.webp",
+        highlights: [
+          ...floorPlansData[0].highlights,
+          "Private terrace garden area of 177 Sq.Ft with direct sit-out access",
+        ],
+      },
       image: "/assets/silver_horizon/floor_plan_terrace_1.webp",
       tag: "Private Terrace",
       name: "Unit 1",
-      location: "Terrace Access",
-      sizeBadge: "Explore",
-    },
-    {
-      unitData: { ...floorPlansData[0], title: "Private Terrace - Unit 2", imageUrl: "/assets/silver_horizon/floor_plan_terrace_2.webp" },
-      image: "/assets/silver_horizon/floor_plan_terrace_2.webp",
-      tag: "Private Terrace",
-      name: "Unit 2",
-      location: "Terrace Access",
-      sizeBadge: "Explore",
-    },
-    {
-      unitData: { ...floorPlansData[1], title: "Private Terrace - Unit 4", imageUrl: "/assets/silver_horizon/floor_plan_terrace_4.webp" },
-      image: "/assets/silver_horizon/floor_plan_terrace_4.webp",
-      tag: "Private Terrace",
-      name: "Unit 4",
       location: "Terrace Access",
       sizeBadge: "Explore",
     },
@@ -73,13 +57,33 @@ export default function FloorPlans({
 
   const totalCards = residenceCards.length;
 
+  const getMaxIndex = () => {
+    if (typeof window === "undefined") return Math.max(0, totalCards - 1);
+    if (window.innerWidth >= 1024) return Math.max(0, totalCards - 3);
+    if (window.innerWidth >= 640) return Math.max(0, totalCards - 2);
+    return Math.max(0, totalCards - 1);
+  };
+
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1 >= totalCards - 1 ? 0 : prev + 1));
+    const max = getMaxIndex();
+    if (max === 0) return;
+    setCurrentIndex((prev) => (prev >= max ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? totalCards - 2 : prev - 1));
+    const max = getMaxIndex();
+    if (max === 0) return;
+    setCurrentIndex((prev) => (prev === 0 ? max : prev - 1));
   };
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      const max = getMaxIndex();
+      setCurrentIndex((prev) => Math.min(prev, max));
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [totalCards]);
 
   const handleCardClick = (plan: FloorPlanUnit) => {
     if (!isUnlocked) {
@@ -106,7 +110,7 @@ export default function FloorPlans({
           {/* Right Description & Action */}
           <div className="lg:col-span-6 space-y-5">
             <p className="text-sm sm:text-base text-gray-500 leading-relaxed font-normal">
-              Expansive 3 BHK residences and sky duplexes in a G+26 floor development, crafted with three-side ventilation and sunlit private decks.
+              Expansive 3 BHK residences in a G+26 floor development, crafted with three-side ventilation and sunlit private decks.
             </p>
             <div>
               <button
@@ -177,7 +181,7 @@ export default function FloorPlans({
         </div>
 
         {/* Bottom Centered Circular Arrow Navigation Controls matching screenshot */}
-        <div className="flex justify-center items-center gap-3 pt-8 sm:pt-10">
+        <div className={`flex justify-center items-center gap-3 pt-8 sm:pt-10 ${totalCards <= 3 ? "lg:hidden" : ""}`}>
           <button
             onClick={prevSlide}
             className="w-12 h-12 rounded-full bg-[#B36B4C] hover:bg-[#8F563D] text-white flex items-center justify-center transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer"
