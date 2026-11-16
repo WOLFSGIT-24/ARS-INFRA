@@ -39,19 +39,6 @@ export default function FloorPlans({
     },
     {
       unitData: {
-        ...floorPlansData[1],
-        unitNo: "Flat No 4",
-        title: "Typical Floor - Unit 4",
-        imageUrl: "/floor_plan_typical_4.webp",
-      },
-      image: "/floor_plan_typical_4.webp",
-      tag: "Typical Floor",
-      name: "Unit 4",
-      location: "Standard Layout",
-      sizeBadge: "Explore",
-    },
-    {
-      unitData: {
         ...floorPlansData[0],
         title: "Private Terrace - Unit 1",
         imageUrl: "/floor_plan_terrace_1.webp",
